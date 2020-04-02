@@ -76,7 +76,7 @@
       <soundExplode>Explosion_Stun</soundExplode>
       <dropsCasings>true</dropsCasings>
       <casingMoteDefname>Mote_GrenadePin</casingMoteDefname>
-      <speed>5</speed>
+      <speed>6</speed>
     </projectile>
   </ThingDef>
 
@@ -125,12 +125,12 @@
       </li>
     </verbs>
     <comps>
-	  <li Class="CombatExtended.CompProperties_ExplosiveCE">
-		<damageAmountBase>25</damageAmountBase>
-		<explosiveDamageType>Stun</explosiveDamageType>
-		<explosiveRadius>4</explosiveRadius>
-        <explosionSound>Explosion_Stun</explosionSound>
-	  </li>
+      <li Class="CombatExtended.CompProperties_ExplosiveCE">
+        <explosionDamage>25</explosionDamage>
+        <explosionDamageDef>Stun</explosionDamageDef>
+        <explosionRadius>4</explosionRadius>
+        <soundExplode>Explosion_Stun</soundExplode>
+      </li>
     </comps>
   </ThingDef>
 
@@ -197,7 +197,14 @@
         <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
       </li>
     </verbs>
-	<detonateProjectile>Proj_GrenadeStickBomb</detonateProjectile>
+    <comps>
+      <li Class="CombatExtended.CompProperties_ExplosiveCE">
+        <explosionDamage>234</explosionDamage>
+        <explosionDamageDef>Bomb</explosionDamageDef>
+        <explosionRadius>2.5</explosionRadius>
+        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      </li>
+    </comps>
   </ThingDef>
 
   <!-- ==================== Smoke grenade ========================== -->
@@ -265,12 +272,12 @@
       </li>
     </verbs>
     <comps>
-	  <li Class="CombatExtended.CompProperties_ExplosiveCE">
-		<damageAmountBase>4</damageAmountBase>
-		<explosiveDamageType>Smoke</explosiveDamageType>
+      <li Class="CombatExtended.CompProperties_ExplosiveCE">
+        <explosionDamageDef>Smoke</explosionDamageDef>
+        <explosionRadius>5</explosionRadius>
         <postExplosionSpawnThingDef>Gas_Smoke</postExplosionSpawnThingDef>
         <preExplosionSpawnChance>1</preExplosionSpawnChance>
-	  </li>
+      </li>
     </comps>
   </ThingDef>
 
@@ -338,13 +345,13 @@
       </li>
     </verbs>
     <comps>
-	  <li Class="CombatExtended.CompProperties_ExplosiveCE">
-		<explosiveDamageType>Extinguish</explosiveDamageType>
-		<explosiveRadius>6.5</explosiveRadius>
+      <li Class="CombatExtended.CompProperties_ExplosiveCE">
+        <explosionDamageDef>Extinguish</explosionDamageDef>
+        <explosionRadius>6.5</explosionRadius>
         <postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
         <postExplosionSpawnChance>1</postExplosionSpawnChance>
         <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
-	  </li>
+      </li>
     </comps>
   </ThingDef>
 

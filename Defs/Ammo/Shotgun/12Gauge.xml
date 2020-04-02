@@ -48,7 +48,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>0.1</MarketValue>
+      <MarketValue>0.60</MarketValue>
     </statBases>
     <ammoClass>BuckShot</ammoClass>
     <cookOffProjectile>Bullet_12Gauge_Buck</cookOffProjectile>
@@ -77,7 +77,7 @@
     </graphicData>
     <statBases>
       <Mass>0.048</Mass>
-      <MarketValue>0.2</MarketValue>
+      <MarketValue>1</MarketValue>
     </statBases>
     <ammoClass>Slug</ammoClass>
     <cookOffProjectile>Bullet_12Gauge_Slug</cookOffProjectile>
@@ -93,7 +93,7 @@
     </graphicData>
     <statBases>
       <Mass>0.059</Mass>
-      <MarketValue>0.32</MarketValue>
+      <MarketValue>3</MarketValue>
     </statBases>
     <ammoClass>Beanbag</ammoClass>
     <cookOffProjectile>Bullet_12Gauge_Beanbag</cookOffProjectile>
@@ -108,7 +108,7 @@
     </graphicData>
     <statBases>
       <Mass>0.054</Mass>
-      <MarketValue>0.87</MarketValue>
+      <MarketValue>6</MarketValue>
     </statBases>
     <ammoClass>ElectroSlug</ammoClass>
     <cookOffProjectile>Bullet_12Gauge_ElectroSlug</cookOffProjectile>
@@ -133,7 +133,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <damageAmountBase>8</damageAmountBase>
+      <damageAmountBase>9</damageAmountBase>
       <pelletCount>9</pelletCount>
       <armorPenetrationSharp>4</armorPenetrationSharp>
       <armorPenetrationBlunt>4.52</armorPenetrationBlunt>
@@ -165,8 +165,8 @@
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <speed>110</speed>
-      <damageAmountBase>28</damageAmountBase>
-      <armorPenetrationSharp>6</armorPenetrationSharp>
+      <damageAmountBase>30</damageAmountBase>
+      <armorPenetrationSharp>7</armorPenetrationSharp>
       <armorPenetrationBlunt>85.2</armorPenetrationBlunt>
     </projectile>
   </ThingDef>
@@ -196,7 +196,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <speed>30</speed>
+      <speed>50</speed>
       <damageDef>EMP</damageDef>
       <damageAmountBase>12</damageAmountBase>
       <armorPenetrationSharp>0</armorPenetrationSharp>
@@ -208,8 +208,8 @@
 
   <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_12Gauge_Buck</defName>
-    <label>make 12 gauge (Buck) shell x200</label>
-    <description>Craft 200 12 gauge (Buck) shells.</description>
+    <label>make 12 gauge (Buck) shell x100</label>
+    <description>Craft 100 12 gauge (Buck) shells.</description>
     <jobString>Making 12 gauge (Buck) shells.</jobString>
     <ingredients>
       <li>
@@ -218,7 +218,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>10</count>
+        <count>20</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -227,7 +227,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_12Gauge_Buck>200</Ammo_12Gauge_Buck>
+      <Ammo_12Gauge_Buck>100</Ammo_12Gauge_Buck>
     </products>
     <workAmount>1000</workAmount>
   </RecipeDef>
@@ -260,8 +260,8 @@
 
   <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_12Gauge_Slug</defName>
-    <label>make 12 gauge (Slug) shell x200</label>
-    <description>Craft 200 12 gauge (Slug) shells.</description>
+    <label>make 12 gauge (Slug) shell x100</label>
+    <description>Craft 100 12 gauge (Slug) shells.</description>
     <jobString>Making 12 gauge (Slug) shells.</jobString>
     <ingredients>
       <li>
@@ -279,15 +279,15 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_12Gauge_Slug>200</Ammo_12Gauge_Slug>
+      <Ammo_12Gauge_Slug>100</Ammo_12Gauge_Slug>
     </products>
     <workAmount>2000</workAmount>
   </RecipeDef>
 
   <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_12Gauge_Beanbag</defName>
-    <label>make 12 gauge (Beanbag) shell x200</label>
-    <description>Craft 200 12 gauge (Beanbag) shells.</description>
+    <label>make 12 gauge (Beanbag) shell x50</label>
+    <description>Craft 50 12 gauge (Beanbag) shells.</description>
     <jobString>Making 12 gauge (Beanbag) shells.</jobString>
     <ingredients>
       <li>
@@ -296,7 +296,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>24</count>
+        <count>10</count>
       </li>
       <li>
         <filter>
@@ -304,7 +304,7 @@
             <li>Cloth</li>
           </thingDefs>
         </filter>
-        <count>10</count>
+        <count>20</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -314,15 +314,15 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_12Gauge_Beanbag>200</Ammo_12Gauge_Beanbag>
+      <Ammo_12Gauge_Beanbag>50</Ammo_12Gauge_Beanbag>
     </products>
     <workAmount>3400</workAmount>
   </RecipeDef>
 
   <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_12Gauge_ElectroSlug</defName>
-    <label>make 12 gauge (EMP) shell x200</label>
-    <description>Craft 200 12 gauge (EMP) shells.</description>
+    <label>make 12 gauge (EMP) shell x50</label>
+    <description>Craft 50 12 gauge (EMP) shells.</description>
     <jobString>Making 12 gauge (EMP) shells.</jobString>
     <ingredients>
       <li>
@@ -331,7 +331,15 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>22</count>
+        <count>20</count>
+      </li>
+	        <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
       </li>
       <li>
         <filter>
@@ -339,17 +347,18 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>4</count>
+        <count>1</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Steel</li>
+		<li>Plasteel</li>
         <li>ComponentIndustrial</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_12Gauge_ElectroSlug>200</Ammo_12Gauge_ElectroSlug>
+      <Ammo_12Gauge_ElectroSlug>50</Ammo_12Gauge_ElectroSlug>
     </products>
     <workAmount>4600</workAmount>
   </RecipeDef>

@@ -33,7 +33,7 @@
       <SightsEfficiency>1.6</SightsEfficiency>
       <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
       <Bulk>1.5</Bulk>
-      <Mass>3.00</Mass>
+      <Mass>2.00</Mass>
     </statBases>
     <costList>
       <Steel>100</Steel>
@@ -61,5 +61,50 @@
       </li>
     </modExtensions>
   </ThingDef>
+  
+    <ThingDef ParentName="BaseMakeableGun">
+    <defName>Gun_BinocularsRadioPractice</defName>
+    <label>practice binoculars</label>
+    <description>A pair of binoculars, this is for firearm training since CE breaks that mod</description>
+    <graphicData>
+      <texPath>Things/Weapons/BinocularsRadio</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateAllowChance>0</generateAllowChance>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <MarketValue>50</MarketValue>
+      <SightsEfficiency>1.6</SightsEfficiency>
+      <RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+      <Bulk>1.5</Bulk>
+      <Mass>2.00</Mass>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+    </costList>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <verbClass>CombatExtended.Verb_MarkForArtillery</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Dummy</defaultProjectile>
+        <warmupTime>0.8</warmupTime>
+        <range>5</range>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <onlyManualCast>true</onlyManualCast>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
+      </li>
+    </verbs>
+    <modExtensions>
+      <li Class="CombatExtended.GunDrawExtension">
+        <DrawSize>0.87,0.87</DrawSize>
+        <DrawOffset>0.0,0.0</DrawOffset>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  
 
 </Defs>

@@ -25,8 +25,8 @@
 	<ThingDef Class="CombatExtended.AmmoDef" Name="45ACPBase" ParentName="SmallAmmoBase" Abstract="True">
 		<description>Pistol cartridge favoured for its above average stopping power.</description>
 		<statBases>
-			<Mass>0.02</Mass>
-			<Bulk>0.02</Bulk>
+			<Mass>0.01</Mass>
+			<Bulk>0.01</Bulk>
 		</statBases>
 		<tradeTags>
 			<li>CE_AutoEnableTrade</li>
@@ -45,7 +45,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.09</MarketValue>
+			<MarketValue>0.23</MarketValue>
 		</statBases>
 		<ammoClass>FullMetalJacket</ammoClass>
 		<cookOffProjectile>Bullet_45ACP_FMJ</cookOffProjectile>
@@ -59,7 +59,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.09</MarketValue>
+			<MarketValue>0.73</MarketValue>
 		</statBases>
 		<ammoClass>ArmorPiercing</ammoClass>
 		<cookOffProjectile>Bullet_45ACP_AP</cookOffProjectile>
@@ -73,7 +73,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.09</MarketValue>
+			<MarketValue>0.56</MarketValue>
 		</statBases>
 		<ammoClass>HollowPoint</ammoClass>
 		<cookOffProjectile>Bullet_45ACP_HP</cookOffProjectile>
@@ -97,9 +97,9 @@
 		<defName>Bullet_45ACP_FMJ</defName>
 		<label>.45 ACP bullet (FMJ)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>12</damageAmountBase>
-			<armorPenetrationSharp>3</armorPenetrationSharp>
-			<armorPenetrationBlunt>10.860</armorPenetrationBlunt>
+			<damageAmountBase>15</damageAmountBase>
+			<armorPenetrationSharp>4</armorPenetrationSharp>
+			<armorPenetrationBlunt>20.860</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 
@@ -107,9 +107,9 @@
 		<defName>Bullet_45ACP_AP</defName>
 		<label>.45 ACP bullet (AP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>7</damageAmountBase>
-			<armorPenetrationSharp>6</armorPenetrationSharp>
-			<armorPenetrationBlunt>10.860</armorPenetrationBlunt>
+			<damageAmountBase>11</damageAmountBase>
+			<armorPenetrationSharp>8</armorPenetrationSharp>
+			<armorPenetrationBlunt>30.860</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 
@@ -117,9 +117,9 @@
 		<defName>Bullet_45ACP_HP</defName>
 		<label>.45 ACP bullet (HP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>15</damageAmountBase>
+			<damageAmountBase>21</damageAmountBase>
 			<armorPenetrationSharp>2</armorPenetrationSharp>
-			<armorPenetrationBlunt>10.860</armorPenetrationBlunt>
+			<armorPenetrationBlunt>20.860</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
 
@@ -127,8 +127,8 @@
 
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_45ACP_FMJ</defName>
-		<label>make .45 ACP (FMJ) cartridge x500</label>
-		<description>Craft 500 .45 ACP (FMJ) cartridges.</description>
+		<label>make .45 ACP (FMJ) cartridge x200</label>
+		<description>Craft 200 .45 ACP (FMJ) cartridges.</description>
 		<jobString>Making .45 ACP (FMJ) cartridges.</jobString>
 		<ingredients>
 			<li>
@@ -137,7 +137,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>22</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -146,15 +146,15 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_45ACP_FMJ>500</Ammo_45ACP_FMJ>
+			<Ammo_45ACP_FMJ>200</Ammo_45ACP_FMJ>
 		</products>
 		<workAmount>2200</workAmount>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_45ACP_AP</defName>
-		<label>make .45 ACP (AP) cartridge x500</label>
-		<description>Craft 500 .45 ACP (AP) cartridges.</description>
+		<label>make .45 ACP (AP) cartridge x200</label>
+		<description>Craft 200 .45 ACP (AP) cartridges.</description>
 		<jobString>Making .45 ACP (AP) cartridges.</jobString>
 		<ingredients>
 			<li>
@@ -163,24 +163,33 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>22</count>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Steel</li>
+				<li>Uranium</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_45ACP_AP>500</Ammo_45ACP_AP>
+			<Ammo_45ACP_AP>200</Ammo_45ACP_AP>
 		</products>
-		<workAmount>2200</workAmount>
+		<workAmount>2500</workAmount>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_45ACP_HP</defName>
-		<label>make .45 ACP (HP) cartridge x500</label>
-		<description>Craft 500 .45 ACP (HP) cartridges.</description>
+		<label>make .45 ACP (HP) cartridge x200</label>
+		<description>Craft 200 .45 ACP (HP) cartridges.</description>
 		<jobString>Making .45 ACP (HP) cartridges.</jobString>
 		<ingredients>
 			<li>
@@ -189,18 +198,27 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>22</count>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Steel</li>
+				<li>Plasteel</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_45ACP_HP>500</Ammo_45ACP_HP>
+			<Ammo_45ACP_HP>200</Ammo_45ACP_HP>
 		</products>
-		<workAmount>2200</workAmount>
+		<workAmount>2500</workAmount>
 	</RecipeDef>
 
 </Defs>

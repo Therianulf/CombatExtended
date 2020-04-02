@@ -43,7 +43,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>6.78</MarketValue>
+      <MarketValue>8.78</MarketValue>
     </statBases>
     <ammoClass>Charged</ammoClass>
   </ThingDef>
@@ -74,5 +74,33 @@
   </ThingDef>
 
   <!-- ==================== Recipes ========================== -->
+  
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_12x64mmCharged</defName>
+    <label>Breakdown 12x64mm Charged x100</label>
+    <description>Breakdown 12x64mm Charged cartridges for parts.</description>
+    <jobString>Breaking down 12x64mm Charged cartridges.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>12x64mmCharged</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>12x64mmCharged</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+	  <Steel>150</Steel>
+	  <Plasteel>40</Plasteel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </products>
+    <workAmount>4000</workAmount>
+  </RecipeDef>
 
 </Defs>
