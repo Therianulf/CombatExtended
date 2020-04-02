@@ -76,7 +76,7 @@
       <soundExplode>Explosion_Stun</soundExplode>
       <dropsCasings>true</dropsCasings>
       <casingMoteDefname>Mote_GrenadePin</casingMoteDefname>
-      <speed>6</speed>
+      <speed>5</speed>
     </projectile>
   </ThingDef>
 
@@ -95,7 +95,7 @@
     <statBases>
       <Mass>0.236</Mass>
       <Bulk>0.61</Bulk>
-      <MarketValue>8.33</MarketValue>
+      <MarketValue>61.33</MarketValue>
       <SightsEfficiency>0.65</SightsEfficiency>
       <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
     </statBases>
@@ -111,7 +111,7 @@
         <label>throw flashbang grenade</label>
         <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <range>10</range>
+        <range>12</range>
         <warmupTime>0.8</warmupTime>
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
@@ -126,10 +126,10 @@
     </verbs>
     <comps>
       <li Class="CombatExtended.CompProperties_ExplosiveCE">
-        <explosionDamage>25</explosionDamage>
-        <explosionDamageDef>Stun</explosionDamageDef>
-        <explosionRadius>4</explosionRadius>
-        <soundExplode>Explosion_Stun</soundExplode>
+        <damageAmountBase>25</damageAmountBase>
+        <explosiveDamageType>Stun</explosiveDamageType>
+        <explosiveRadius>5</explosiveRadius>
+        <explosionSound>Explosion_Stun</explosionSound>
       </li>
     </comps>
   </ThingDef>
@@ -197,14 +197,7 @@
         <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
       </li>
     </verbs>
-    <comps>
-      <li Class="CombatExtended.CompProperties_ExplosiveCE">
-        <explosionDamage>234</explosionDamage>
-        <explosionDamageDef>Bomb</explosionDamageDef>
-        <explosionRadius>2.5</explosionRadius>
-        <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
-      </li>
-    </comps>
+    <detonateProjectile>Proj_GrenadeStickBomb</detonateProjectile>
   </ThingDef>
 
   <!-- ==================== Smoke grenade ========================== -->
@@ -242,13 +235,13 @@
     <statBases>
       <Mass>0.539</Mass>
       <Bulk>1.05</Bulk>
-      <MarketValue>8.33</MarketValue>
+      <MarketValue>12.33</MarketValue>
       <SightsEfficiency>0.65</SightsEfficiency>
       <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>CE_AI_Nonlethal</li>
-      <li>GrenadeSmoke</li>	  
+      <li>GrenadeSmoke</li>   
     </weaponTags>
     <thingCategories>
       <li>Grenades</li>
@@ -258,7 +251,7 @@
         <label>throw smoke grenade</label>
         <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <range>10</range>
+        <range>12</range>
         <warmupTime>0.8</warmupTime>
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
@@ -273,8 +266,8 @@
     </verbs>
     <comps>
       <li Class="CombatExtended.CompProperties_ExplosiveCE">
-        <explosionDamageDef>Smoke</explosionDamageDef>
-        <explosionRadius>5</explosionRadius>
+        <damageAmountBase>5</damageAmountBase>
+        <explosiveDamageType>Smoke</explosiveDamageType>
         <postExplosionSpawnThingDef>Gas_Smoke</postExplosionSpawnThingDef>
         <preExplosionSpawnChance>1</preExplosionSpawnChance>
       </li>
@@ -316,7 +309,7 @@
     <statBases>
       <Mass>0.5</Mass>
       <Bulk>1.05</Bulk>
-      <MarketValue>11.52</MarketValue>
+      <MarketValue>21.52</MarketValue>
       <SightsEfficiency>0.65</SightsEfficiency>
       <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
     </statBases>
@@ -331,7 +324,7 @@
         <label>throw firefoam grenade</label>
         <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <range>10</range>
+        <range>14</range>
         <warmupTime>0.8</warmupTime>
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
@@ -346,8 +339,8 @@
     </verbs>
     <comps>
       <li Class="CombatExtended.CompProperties_ExplosiveCE">
-        <explosionDamageDef>Extinguish</explosionDamageDef>
-        <explosionRadius>6.5</explosionRadius>
+        <explosiveDamageType>Extinguish</explosiveDamageType>
+        <explosiveRadius>8.5</explosiveRadius>
         <postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
         <postExplosionSpawnChance>1</postExplosionSpawnChance>
         <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
