@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <ThingCategoryDef>
@@ -47,7 +47,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>57.78</MarketValue>
+      <MarketValue>157.78</MarketValue>
       <Mass>2.8</Mass>
       <Bulk>9.37</Bulk>
     </statBases>
@@ -63,7 +63,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>123.58</MarketValue>
+      <MarketValue>193.58</MarketValue>
       <Mass>4.7</Mass>
       <Bulk>12.99</Bulk>
     </statBases>
@@ -79,7 +79,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>38.96</MarketValue>
+      <MarketValue>118.96</MarketValue>
       <Mass>2.2</Mass>
       <Bulk>1.89</Bulk>
     </statBases>
@@ -95,7 +95,7 @@
       <shaderType>TransparentPostLight</shaderType>
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <speed>60</speed>
+      <speed>65</speed>
       <soundAmbient>RocketPropelledLoop_Small</soundAmbient>
     </projectile>
   </ThingDef>
@@ -109,15 +109,15 @@
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>304</damageAmountBase>
+      <damageAmountBase>354</damageAmountBase>
       <armorPenetrationSharp>500</armorPenetrationSharp>
       <armorPenetrationBlunt>44.956</armorPenetrationBlunt>
     </projectile>
     <comps>
 	  <li Class="CombatExtended.CompProperties_ExplosiveCE">
-		<damageAmountBase>150</damageAmountBase>
+		<damageAmountBase>175</damageAmountBase>
 		<explosiveDamageType>Bomb</explosiveDamageType>
-		<explosiveRadius>1.5</explosiveRadius>
+		<explosiveRadius>2.5</explosiveRadius>
 		<explosionSound>MortarBomb_Explode</explosionSound>
 		<applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 	  </li>
@@ -139,7 +139,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <explosionRadius>5</explosionRadius>
+      <explosionRadius>7</explosionRadius>
       <damageDef>Thermobaric</damageDef>
       <damageAmountBase>275</damageAmountBase>
       <armorPenetrationSharp>0</armorPenetrationSharp>
@@ -158,10 +158,10 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <explosionRadius>1.5</explosionRadius>
+      <explosionRadius>3</explosionRadius>
       <damageDef>Bomb</damageDef>
       <armorPenetrationSharp>0</armorPenetrationSharp>
-      <damageAmountBase>58</damageAmountBase>
+      <damageAmountBase>35</damageAmountBase>
       <armorPenetrationBlunt>0</armorPenetrationBlunt>
       <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     </projectile>
@@ -178,8 +178,8 @@
 
   <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_RPG7Grenade_HEAT</defName>
-    <label>make RPG-7 HEAT grenades x5</label>
-    <description>Craft 5 RPG-7 HEAT grenades.</description>
+    <label>make RPG-7 HEAT grenades x2</label>
+    <description>Craft 2 RPG-7 HEAT grenades.</description>
     <jobString>Making RPG-7 HEAT grenades.</jobString>
     <workAmount>9200</workAmount>
     <ingredients>
@@ -189,7 +189,104 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>28</count>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>FSX</li>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_RPG7Grenade_HEAT>2</Ammo_RPG7Grenade_HEAT>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_RPG7Grenade_Thermobaric</defName>
+    <label>make RPG-7 thermobaric grenades x2</label>
+    <description>Craft 2 RPG-7 thermobaric grenades.</description>
+    <jobString>Making RPG-7 thermobaric grenades.</jobString>
+    <workAmount>22400</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FSX</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Prometheum</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>FSX</li>
+        <li>Prometheum</li>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Ammo_RPG7Grenade_Thermobaric>2</Ammo_RPG7Grenade_Thermobaric>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="AmmoRecipeBase">
+    <defName>MakeAmmo_RPG7Grenade_Frag</defName>
+    <label>make RPG-7 frag grenades x2</label>
+    <description>Craft 2 RPG-7 frag grenades.</description>
+    <jobString>Making RPG-7 frag grenades.</jobString>
+    <workAmount>5400</workAmount>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
       </li>
       <li>
         <filter>
@@ -205,96 +302,8 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>4</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Steel</li>
-        <li>FSX</li>
-        <li>ComponentIndustrial</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <Ammo_RPG7Grenade_HEAT>5</Ammo_RPG7Grenade_HEAT>
-    </products>
-  </RecipeDef>
-
-  <RecipeDef ParentName="AmmoRecipeBase">
-    <defName>MakeAmmo_RPG7Grenade_Thermobaric</defName>
-    <label>make RPG-7 thermobaric grenades x5</label>
-    <description>Craft 5 RPG-7 thermobaric grenades.</description>
-    <jobString>Making RPG-7 thermobaric grenades.</jobString>
-    <workAmount>22400</workAmount>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>48</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>FSX</li>
-          </thingDefs>
-        </filter>
-        <count>38</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>4</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>Steel</li>
-        <li>FSX</li>
-        <li>ComponentIndustrial</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <products>
-      <Ammo_RPG7Grenade_Thermobaric>5</Ammo_RPG7Grenade_Thermobaric>
-    </products>
-  </RecipeDef>
-
-  <RecipeDef ParentName="AmmoRecipeBase">
-    <defName>MakeAmmo_RPG7Grenade_Frag</defName>
-    <label>make RPG-7 frag grenades x5</label>
-    <description>Craft 5 RPG-7 frag grenades.</description>
-    <jobString>Making RPG-7 frag grenades.</jobString>
-    <workAmount>5400</workAmount>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>22</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>FSX</li>
-          </thingDefs>
-        </filter>
         <count>2</count>
       </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>4</count>
-      </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
@@ -304,7 +313,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_RPG7Grenade_Frag>5</Ammo_RPG7Grenade_Frag>
+      <Ammo_RPG7Grenade_Frag>2</Ammo_RPG7Grenade_Frag>
     </products>
   </RecipeDef>
 
