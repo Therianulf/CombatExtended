@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <ThingCategoryDef>
@@ -47,7 +47,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>2.37</MarketValue>
+      <MarketValue>12.37</MarketValue>
     </statBases>
     <ammoClass>GrenadeHE</ammoClass>
 	<detonateProjectile>Bullet_40x46mmGrenade_HE</detonateProjectile>
@@ -61,7 +61,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>4.25</MarketValue>
+      <MarketValue>24.25</MarketValue>
     </statBases>
     <ammoClass>GrenadeEMP</ammoClass>
     <comps>
@@ -86,7 +86,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>1.96</MarketValue>
+      <MarketValue>9.96</MarketValue>
     </statBases>
     <ammoClass>Smoke</ammoClass>
     <comps>
@@ -120,9 +120,9 @@
     <defName>Bullet_40x46mmGrenade_HE</defName>
     <label>40x46mm grenade (HE)</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <explosionRadius>1.0</explosionRadius >
+      <explosionRadius>3.0</explosionRadius >
       <damageDef>Bomb</damageDef>
-      <damageAmountBase>20</damageAmountBase>
+      <damageAmountBase>16</damageAmountBase>
       <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
     </projectile>
     <comps>
@@ -139,7 +139,7 @@
     <defName>Bullet_40x46mmGrenade_EMP</defName>
     <label>40x46mm grenade (EMP)</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <explosionRadius>1.5</explosionRadius>
+      <explosionRadius>2.5</explosionRadius>
       <damageDef>EMP</damageDef>
       <damageAmountBase>20</damageAmountBase>
     </projectile>
@@ -149,7 +149,7 @@
     <defName>Bullet_40x46mmGrenade_Smoke</defName>
     <label>40x46mm grenade (Smoke)</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <explosionRadius>2</explosionRadius>
+      <explosionRadius>4</explosionRadius>
       <damageDef>Smoke</damageDef>
       <postExplosionSpawnThingDef>Gas_Smoke</postExplosionSpawnThingDef>
       <preExplosionSpawnChance>1</preExplosionSpawnChance>
@@ -160,8 +160,8 @@
 
   <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_40x46mmGrenade_HE</defName>
-    <label>make 40x46mm HE grenades x100</label>
-    <description>Craft 100 40x46mm HE grenades.</description>
+    <label>make 40x46mm HE grenades x30</label>
+    <description>Craft 30 40x46mm HE grenades.</description>
     <jobString>Making 40x46mm HE grenades.</jobString>
     <ingredients>
       <li>
@@ -170,7 +170,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>50</count>
+        <count>30</count>
       </li>
       <li>
         <filter>
@@ -178,7 +178,7 @@
             <li>FSX</li>
           </thingDefs>
         </filter>
-        <count>7</count>
+        <count>10</count>
       </li>
       <li>
         <filter>
@@ -186,7 +186,7 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>3</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -197,15 +197,15 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_40x46mmGrenade_HE>100</Ammo_40x46mmGrenade_HE>
+      <Ammo_40x46mmGrenade_HE>30</Ammo_40x46mmGrenade_HE>
     </products>
     <workAmount>9000</workAmount>
   </RecipeDef>
 
   <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_40x46mmGrenade_EMP</defName>
-    <label>make 40x46mm EMP grenades x100</label>
-    <description>Craft 100 40x46mm EMP grenades.</description>
+    <label>make 40x46mm EMP grenades x 30</label>
+    <description>Craft 30 40x46mm EMP grenades.</description>
     <jobString>Making 40x46mm EMP grenades.</jobString>
     <ingredients>
       <li>
@@ -214,7 +214,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>50</count>
+        <count>30</count>
       </li>
       <li>
         <filter>
@@ -222,7 +222,7 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>10</count>
+        <count>3</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -239,8 +239,8 @@
 
   <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_40x46mmGrenade_Smoke</defName>
-    <label>make 40x46mm smoke grenades x100</label>
-    <description>Craft 100 40x46mm smoke grenades.</description>
+    <label>make 40x46mm smoke grenades x50</label>
+    <description>Craft 50 40x46mm smoke grenades.</description>
     <jobString>Making 40x46mm smoke grenades.</jobString>
     <ingredients>
       <li>
@@ -249,7 +249,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>50</count>
+        <count>30</count>
       </li>
       <li>
         <filter>
@@ -257,7 +257,7 @@
             <li>Prometheum</li>
           </thingDefs>
         </filter>
-        <count>5</count>
+        <count>15</count>
       </li>
       <li>
         <filter>
@@ -265,7 +265,7 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>1</count>
       </li>      
     </ingredients>
     <fixedIngredientFilter>
@@ -276,7 +276,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_40x46mmGrenade_Smoke>100</Ammo_40x46mmGrenade_Smoke>
+      <Ammo_40x46mmGrenade_Smoke>50</Ammo_40x46mmGrenade_Smoke>
     </products>
     <workAmount>8200</workAmount>
   </RecipeDef>

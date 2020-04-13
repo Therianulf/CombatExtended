@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <ThingCategoryDef>
@@ -123,7 +123,7 @@
     <defName>Bullet_30x29mmGrenade_HE</defName>
     <label>30x29mm grenade (HE)</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <explosionRadius>1</explosionRadius >
+        <explosionRadius>1.5</explosionRadius >
       <damageDef>Bomb</damageDef>
       <damageAmountBase>21</damageAmountBase>
       <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>

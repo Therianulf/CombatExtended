@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 	<ThingCategoryDef>
@@ -47,7 +47,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>2.89</MarketValue>
+      <MarketValue>21.89</MarketValue>
     </statBases>
     <ammoClass>GrenadeHE</ammoClass>
 	<detonateProjectile>Bullet_40x53mmGrenade_HE</detonateProjectile>
@@ -61,7 +61,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>4.76</MarketValue>
+      <MarketValue>34.76</MarketValue>
     </statBases>
     <ammoClass>GrenadeEMP</ammoClass>
     <comps>
@@ -86,7 +86,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>2.48</MarketValue>
+      <MarketValue>20.48</MarketValue>
     </statBases>
     <ammoClass>Smoke</ammoClass>
     <comps>
@@ -120,16 +120,16 @@
 		<defName>Bullet_40x53mmGrenade_HE</defName>
 		<label>40x53mm grenade (HE)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<explosionRadius>1</explosionRadius >
+            <explosionRadius>2.5</explosionRadius >
 			<damageDef>Bomb</damageDef>
-			<damageAmountBase>20</damageAmountBase>
+			<damageAmountBase>21</damageAmountBase>
       <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
 		</projectile>
 		<comps>
 			<li Class="CombatExtended.CompProperties_Fragments">
 				<fragments>
-          <Fragment_Large>2</Fragment_Large>
-          <Fragment_Small>4</Fragment_Small>
+          <Fragment_Large>4</Fragment_Large>
+          <Fragment_Small>6</Fragment_Small>
 				</fragments>
 			</li>
 		</comps>
@@ -139,9 +139,9 @@
 		<defName>Bullet_40x53mmGrenade_EMP</defName>
 		<label>40x53mm grenade (EMP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<explosionRadius>1.5</explosionRadius>
+			<explosionRadius>2.5</explosionRadius>
 			<damageDef>EMP</damageDef>
-			<damageAmountBase>20</damageAmountBase>
+			<damageAmountBase>21</damageAmountBase>
 		</projectile>
 	</ThingDef>
 
@@ -149,7 +149,7 @@
     <defName>Bullet_40x53mmGrenade_Smoke</defName>
     <label>40x53mm grenade (Smoke)</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <explosionRadius>2</explosionRadius>
+      <explosionRadius>5</explosionRadius>
       <damageDef>Smoke</damageDef>
       <postExplosionSpawnThingDef>Gas_Smoke</postExplosionSpawnThingDef>
       <preExplosionSpawnChance>1</preExplosionSpawnChance>
@@ -160,8 +160,8 @@
 
   <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_40x53mmGrenade_HE</defName>
-    <label>make 40x53mm HE grenades x100</label>
-    <description>Craft 100 40x53mm HE grenades.</description>
+    <label>make 40x53mm HE grenades x30</label>
+    <description>Craft 30 40x53mm HE grenades.</description>
     <jobString>Making 40x53mm HE grenades.</jobString>
     <ingredients>
       <li>
@@ -170,7 +170,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>76</count>
+        <count>40</count>
       </li>
       <li>
         <filter>
@@ -178,7 +178,7 @@
             <li>FSX</li>
           </thingDefs>
         </filter>
-        <count>7</count>
+        <count>30</count>
       </li>
       <li>
         <filter>
@@ -186,7 +186,7 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>4</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -197,15 +197,15 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_40x53mmGrenade_HE>100</Ammo_40x53mmGrenade_HE>
+      <Ammo_40x53mmGrenade_HE>30</Ammo_40x53mmGrenade_HE>
     </products>
     <workAmount>11600</workAmount>    
   </RecipeDef>
 
   <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_40x53mmGrenade_EMP</defName>
-    <label>make 40x53mm EMP grenades x100</label>
-    <description>Craft 100 40x53mm EMP grenades.</description>
+    <label>make 40x53mm EMP grenades x30</label>
+    <description>Craft 30 40x53mm EMP grenades.</description>
     <jobString>Making 40x53mm EMP grenades.</jobString>
     <ingredients>
       <li>
@@ -214,7 +214,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>76</count>
+        <count>30</count>
       </li>
       <li>
         <filter>
@@ -222,7 +222,7 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>10</count>
+        <count>5</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -232,15 +232,15 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_40x53mmGrenade_EMP>100</Ammo_40x53mmGrenade_EMP>
+      <Ammo_40x53mmGrenade_EMP>30</Ammo_40x53mmGrenade_EMP>
     </products>
     <workAmount>13600</workAmount>      
   </RecipeDef>
 
   <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_40x53mmGrenade_Smoke</defName>
-    <label>make 40x53mm smoke grenades x100</label>
-    <description>Craft 100 40x53mm smoke grenades.</description>
+    <label>make 40x53mm smoke grenades x50</label>
+    <description>Craft 50 40x53mm smoke grenades.</description>
     <jobString>Making 40x53mm smoke grenades.</jobString>
     <ingredients>
       <li>
@@ -249,7 +249,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>78</count>
+        <count>40</count>
       </li>
       <li>
         <filter>
@@ -257,7 +257,7 @@
             <li>Prometheum</li>
           </thingDefs>
         </filter>
-        <count>5</count>
+        <count>10</count>
       </li>
       <li>
         <filter>
@@ -276,9 +276,9 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_40x53mmGrenade_Smoke>100</Ammo_40x53mmGrenade_Smoke>
+      <Ammo_40x53mmGrenade_Smoke>50</Ammo_40x53mmGrenade_Smoke>
     </products>
-    <workAmount>108000</workAmount>
+    <workAmount>18000</workAmount>
   </RecipeDef>
 
 </Defs>
