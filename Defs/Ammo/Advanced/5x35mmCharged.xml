@@ -89,7 +89,7 @@
             <li>Ammo_5x35mmCharged</li>
           </thingDefs>
         </filter>
-        <count>100</count>
+        <count>200</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>

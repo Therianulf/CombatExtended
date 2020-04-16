@@ -93,7 +93,7 @@
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>ammo_12x64mmCharged</li>
+        <li>Ammo12x64mmCharged</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
