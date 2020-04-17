@@ -85,10 +85,10 @@
       <li>
         <filter>
           <thingDefs>
-            <li>ammo_12x64mmCharged</li>
+            <li>Ammo_12x64mmCharged</li>
           </thingDefs>
         </filter>
-        <count>100</count>
+        <count>200</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
