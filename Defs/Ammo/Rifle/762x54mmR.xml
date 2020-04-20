@@ -399,8 +399,8 @@
   
   <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_762x54mmR_Sabot</defName>
-    <label>make 7.62x54mmR (Sabot) cartridge x500</label>
-    <description>Craft 500 7.62x54mmR (Sabot) cartridges.</description>
+    <label>make 7.62x54mmR (Sabot) cartridge x100</label>
+    <description>Craft 100 7.62x54mmR (Sabot) cartridges.</description>
     <jobString>Making 7.62x54mmR (Sabot) cartridges.</jobString>
   <ingredients>
       <li>
