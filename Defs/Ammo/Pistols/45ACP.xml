@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 	<ThingCategoryDef>
@@ -97,8 +97,8 @@
 		<defName>Bullet_45ACP_FMJ</defName>
 		<label>.45 ACP bullet (FMJ)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>15</damageAmountBase>
-			<armorPenetrationSharp>4</armorPenetrationSharp>
+			<damageAmountBase>14</damageAmountBase>
+			<armorPenetrationSharp>3</armorPenetrationSharp>
 			<armorPenetrationBlunt>20.860</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
