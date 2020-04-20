@@ -76,7 +76,7 @@
 
   <!-- ==================== Recipes ========================== -->
   
-  <RecipeDef ParentName="AmmoRecipeBase">
+  <RecipeDef ParentName="ChargeAmmoRecipeBase">
     <defName>MakeAmmo_12x64mmCharged</defName>
     <label>Breakdown 12x64mm Charged x100</label>
     <description>Breakdown 12x64mm Charged cartridges for parts.</description>
@@ -93,7 +93,7 @@
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>Ammo12x64mmCharged</li>
+        <li>Ammo_12x64mmCharged</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
