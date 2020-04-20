@@ -77,7 +77,7 @@
 
   <!-- ==================== Recipes ========================== -->
   
-  <RecipeDef ParentName="AmmoRecipeBase">
+  <RecipeDef ParentName="ChargeAmmoRecipeBase">
     <defName>MakeAmmo_5x35mmCharged</defName>
     <label>Breakdown 5x35mm Charged x200</label>
     <description>Breakdown 5x35mm Charged cartridges for parts.</description>
