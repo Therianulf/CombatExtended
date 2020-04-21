@@ -48,7 +48,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.05</MarketValue>
+			<MarketValue>0.17</MarketValue>
 		</statBases>
 		<ammoClass>FullMetalJacket</ammoClass>
 		<cookOffProjectile>Bullet_545x39mmSoviet_FMJ</cookOffProjectile>
@@ -62,7 +62,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.05</MarketValue>
+            <MarketValue>2.1</MarketValue>
 		</statBases>
 		<ammoClass>ArmorPiercing</ammoClass>
 		<cookOffProjectile>Bullet_545x39mmSoviet_AP</cookOffProjectile>
@@ -76,7 +76,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.05</MarketValue>
+			<MarketValue>0.95</MarketValue>
 		</statBases>
 		<ammoClass>HollowPoint</ammoClass>
 		<cookOffProjectile>Bullet_545x39mmSoviet_HP</cookOffProjectile>
@@ -90,7 +90,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>0.07</MarketValue>
+      <MarketValue>6.07</MarketValue>
     </statBases>
     <ammoClass>IncendiaryAP</ammoClass>
     <cookOffProjectile>Bullet_545x39mmSoviet_Incendiary</cookOffProjectile>
@@ -104,7 +104,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>0.14</MarketValue>
+      <MarketValue>8.14</MarketValue>
     </statBases>
     <ammoClass>ExplosiveAP</ammoClass>
     <cookOffProjectile>Bullet_545x39mmSoviet_HE</cookOffProjectile>
@@ -118,7 +118,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>0.07</MarketValue>
+      <MarketValue>11.07</MarketValue>
 	  <Mass>0.01</Mass>
     </statBases>
     <ammoClass>Sabot</ammoClass>
