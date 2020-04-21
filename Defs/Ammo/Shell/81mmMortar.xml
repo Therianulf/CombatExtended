@@ -506,9 +506,9 @@
       </li>
       <li>
         <filter>
-          <categories>
+          <thingDefs>
             <li>Silver</li>
-          </categories>
+          </thingDefs>
         </filter>
         <count>50</count>
       </li>

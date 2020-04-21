@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingCategoryDef>
     <defName>Ammo60mmMortarShells</defName>
@@ -57,7 +57,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>29.2</MarketValue>
+      <MarketValue>69.2</MarketValue>
     </statBases>
     <ammoClass>GrenadeHE</ammoClass>
 	<detonateProjectile>Bullet_60mmMortarShell_HE</detonateProjectile>
@@ -71,7 +71,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>23.47</MarketValue>
+      <MarketValue>83.47</MarketValue>
     </statBases>
     <ammoClass>GrenadeIncendiary</ammoClass>
     <comps>
@@ -95,7 +95,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>46.94</MarketValue>
+      <MarketValue>86.94</MarketValue>
     </statBases>
     <ammoClass>GrenadeEMP</ammoClass>
     <comps>
@@ -116,7 +116,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>23.97</MarketValue>
+      <MarketValue>33.97</MarketValue>
     </statBases>
     <ammoClass>FoamFuel</ammoClass>
 	<detonateProjectile>Bullet_60mmMortarShell_Firefoam</detonateProjectile>
@@ -257,7 +257,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>20</count>
+        <count>25</count>
       </li>
       <li>
         <filter>
@@ -265,7 +265,7 @@
             <li>FSX</li>
           </thingDefs>
         </filter>
-        <count>4</count>
+        <count>20</count>
       </li>
       <li>
         <filter>
@@ -301,7 +301,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>20</count>
+        <count>25</count>
       </li>
       <li>
         <filter>
@@ -309,7 +309,7 @@
             <li>Prometheum</li>
           </thingDefs>
         </filter>
-        <count>2</count>
+        <count>10</count>
       </li>
       <li>
         <filter>
@@ -345,7 +345,15 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>20</count>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -353,7 +361,7 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>6</count>
+        <count>4</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -380,7 +388,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>20</count>
+        <count>25</count>
       </li>
       <li>
         <filter>
@@ -391,22 +399,20 @@
         <count>2</count>
       </li>
       <li>
-        <filter>
-          <categories>
-            <li>MeatRaw</li>
-          </categories>
-        </filter>
-        <count>7</count>
-      </li>
+         <filter>
+           <thingDefs>
+             <li>Silver</li>
+           </thingDefs>
+         </filter>
+         <count>50</count>
+       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Steel</li>
         <li>ComponentIndustrial</li>
+        <li>Silver</li>
       </thingDefs>
-      <categories>
-        <li>MeatRaw</li>
-      </categories>
     </fixedIngredientFilter>
     <products>
       <Shell_60mmMortar_Firefoam>5</Shell_60mmMortar_Firefoam>
