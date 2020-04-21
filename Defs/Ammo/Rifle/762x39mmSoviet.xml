@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 	<ThingCategoryDef>
@@ -175,7 +175,7 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>25</damageAmountBase>
+			<damageAmountBase>21</damageAmountBase>
 			<armorPenetrationSharp>3</armorPenetrationSharp>
 			<armorPenetrationBlunt>31.08</armorPenetrationBlunt>
 		</projectile>
@@ -344,20 +344,11 @@
         </filter>
         <count>20</count>
       </li>
-	  	  <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Steel</li>
         <li>Prometheum</li>
-		<li>ComponentIndustrial</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -388,20 +379,11 @@
         </filter>
         <count>20</count>
       </li>
-	  	  <li>
-        <filter>
-          <thingDefs>
-            <li>ComponentIndustrial</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Steel</li>
         <li>FSX</li>
-		<li>ComponentIndustrial</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
