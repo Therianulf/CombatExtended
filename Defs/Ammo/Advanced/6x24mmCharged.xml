@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <ThingCategoryDef>
@@ -46,7 +46,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>0.7</MarketValue>
+      <MarketValue>21.7</MarketValue>
     </statBases>
     <ammoClass>Charged</ammoClass>
   </ThingDef>
@@ -59,7 +59,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>0.7</MarketValue>
+      <MarketValue>30.7</MarketValue>
     </statBases>
     <ammoClass>ChargedAP</ammoClass>
   </ThingDef>
@@ -72,7 +72,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>0.7</MarketValue>
+      <MarketValue>50.7</MarketValue>
     </statBases>
     <ammoClass>Ionized</ammoClass>
     <generateAllowChance>0</generateAllowChance>
@@ -87,7 +87,7 @@
     </graphicData>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageDef>Bullet</damageDef>
-      <speed>160</speed>
+      <speed>175</speed>
     </projectile>
   </ThingDef>
 
@@ -95,14 +95,14 @@
     <defName>Bullet_6x24mmCharged</defName>
     <label>6x24mm Charged bullet</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <damageAmountBase>13</damageAmountBase>
+      <damageAmountBase>23</damageAmountBase>
       <secondaryDamage>
         <li>
           <def>Bomb_Secondary</def>
-          <amount>4</amount>
+          <amount>8</amount>
         </li>
       </secondaryDamage>
-      <armorPenetrationSharp>12</armorPenetrationSharp>
+      <armorPenetrationSharp>16</armorPenetrationSharp>
       <armorPenetrationBlunt>25.6</armorPenetrationBlunt>
     </projectile>
   </ThingDef>
@@ -111,14 +111,14 @@
     <defName>Bullet_6x24mmCharged_AP</defName>
     <label>6x24mm Charged bullet (Conc.)</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <damageAmountBase>10</damageAmountBase>
+      <damageAmountBase>17</damageAmountBase>
       <secondaryDamage>
         <li>
           <def>Bomb_Secondary</def>
-          <amount>2</amount>
+          <amount>4</amount>
         </li>
       </secondaryDamage>
-      <armorPenetrationSharp>24</armorPenetrationSharp>
+      <armorPenetrationSharp>27</armorPenetrationSharp>
       <armorPenetrationBlunt>25.6</armorPenetrationBlunt>
     </projectile>
   </ThingDef>
@@ -127,15 +127,15 @@
     <defName>Bullet_6x24mmCharged_Ion</defName>
     <label>6x24mm Charged bullet (Ion)</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <damageAmountBase>10</damageAmountBase>
+      <damageAmountBase>17</damageAmountBase>
       <secondaryDamage>
         <li>
           <def>EMP</def>
-          <amount>6</amount>
+          <amount>8</amount>
         </li>
       </secondaryDamage>
-      <armorPenetrationSharp>18</armorPenetrationSharp>
-      <armorPenetrationBlunt>25.6</armorPenetrationBlunt>
+      <armorPenetrationSharp>30</armorPenetrationSharp>
+      <armorPenetrationBlunt>75.6</armorPenetrationBlunt>
     </projectile>
   </ThingDef>
 
@@ -143,8 +143,8 @@
 
   <RecipeDef ParentName="ChargeAmmoRecipeBase">
     <defName>MakeAmmo_6x24mmCharged</defName>
-    <label>make 6x24mm Charged cartridge x500</label>
-    <description>Craft 500 6x24mm Charged cartridges.</description>
+    <label>make 6x24mm Charged cartridge x100</label>
+    <description>Craft 100 6x24mm Charged cartridges.</description>
     <jobString>Making 6x24mm Charged cartridges.</jobString>
     <ingredients>
       <li>
@@ -153,7 +153,7 @@
             <li>Plasteel</li>
           </thingDefs>
         </filter>
-        <count>8</count>
+        <count>20</count>
       </li>
       <li>
         <filter>
@@ -161,43 +161,61 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>6</count>
-      </li>	  
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
       <li>
         <filter>
           <thingDefs>
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>8</count>
+        <count>4</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Plasteel</li>
-        <li>Steel</li>		
+        <li>Steel</li>
+        <li>Gold</li>
+        <li>Silver</li>
         <li>ComponentIndustrial</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_6x24mmCharged>500</Ammo_6x24mmCharged>
+      <Ammo_6x24mmCharged>100</Ammo_6x24mmCharged>
     </products>
     <workAmount>8600</workAmount>		
   </RecipeDef>
 
   <RecipeDef ParentName="ChargeAmmoRecipeBase">
     <defName>MakeAmmo_6x24mmCharged_AP</defName>
-    <label>make 6x24mm Charged (Conc.) cartridge x500</label>
-    <description>Craft 500 6x24mm Charged (Conc.) cartridges.</description>
+    <label>make 6x24mm Charged (Conc.) cartridge x100</label>
+    <description>Craft 100 6x24mm Charged (Conc.) cartridges.</description>
     <jobString>Making 6x24mm Charged (Conc.) cartridges.</jobString>
-    <ingredients>
+        <ingredients>
       <li>
         <filter>
           <thingDefs>
             <li>Plasteel</li>
           </thingDefs>
         </filter>
-        <count>8</count>
+        <count>25</count>
       </li>
       <li>
         <filter>
@@ -205,43 +223,61 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>6</count>
-      </li>	  
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
       <li>
         <filter>
           <thingDefs>
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>8</count>
+        <count>4</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Plasteel</li>
-        <li>Steel</li>		
+        <li>Steel</li>
+        <li>Gold</li>
+        <li>Silver</li>
         <li>ComponentIndustrial</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_6x24mmCharged_AP>500</Ammo_6x24mmCharged_AP>
+      <Ammo_6x24mmCharged_AP>100</Ammo_6x24mmCharged_AP>
     </products>
     <workAmount>8600</workAmount>		
   </RecipeDef>
 
   <RecipeDef ParentName="ChargeAmmoRecipeBase">
     <defName>MakeAmmo_6x24mmCharged_Ion</defName>
-    <label>make 6x24mm Charged (Ion) cartridge x500</label>
-    <description>Craft 500 6x24mm Charged (Ion) cartridges.</description>
+    <label>make 6x24mm Charged (Ion) cartridge x100</label>
+    <description>Craft 100 6x24mm Charged (Ion) cartridges.</description>
     <jobString>Making 6x24mm Charged (Ion) cartridges.</jobString>
-    <ingredients>
+            <ingredients>
       <li>
         <filter>
           <thingDefs>
             <li>Plasteel</li>
           </thingDefs>
         </filter>
-        <count>8</count>
+        <count>15</count>
       </li>
       <li>
         <filter>
@@ -249,8 +285,24 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>6</count>
-      </li>	  
+        <count>5</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
       <li>
         <filter>
           <thingDefs>
@@ -263,12 +315,14 @@
     <fixedIngredientFilter>
       <thingDefs>
         <li>Plasteel</li>
-        <li>Steel</li>		
+        <li>Steel</li>
+        <li>Gold</li>
+        <li>Silver</li>
         <li>ComponentIndustrial</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_6x24mmCharged_Ion>500</Ammo_6x24mmCharged_Ion>
+      <Ammo_6x24mmCharged_Ion>100</Ammo_6x24mmCharged_Ion>
     </products>
     <workAmount>8600</workAmount>	
   </RecipeDef>

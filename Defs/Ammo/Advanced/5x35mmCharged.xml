@@ -71,7 +71,7 @@
         </li>
       </secondaryDamage>
       <armorPenetrationSharp>30</armorPenetrationSharp>
-      <armorPenetrationBlunt>40</armorPenetrationBlunt>
+      <armorPenetrationBlunt>60</armorPenetrationBlunt>
     </projectile>
   </ThingDef>
 
