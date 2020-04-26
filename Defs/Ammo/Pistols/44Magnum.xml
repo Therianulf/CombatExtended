@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 	<ThingCategoryDef>
@@ -45,7 +45,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.1</MarketValue>
+			<MarketValue>0.21</MarketValue>
 		</statBases>
 		<ammoClass>FullMetalJacket</ammoClass>
 		<cookOffProjectile>Bullet_44Magnum_FMJ</cookOffProjectile>
@@ -59,7 +59,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.1</MarketValue>
+			<MarketValue>0.41</MarketValue>
 		</statBases>
 		<ammoClass>ArmorPiercing</ammoClass>
 		<cookOffProjectile>Bullet_44Magnum_AP</cookOffProjectile>
@@ -73,7 +73,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.1</MarketValue>
+			<MarketValue>0.31</MarketValue>
 		</statBases>
 		<ammoClass>HollowPoint</ammoClass>
 		<cookOffProjectile>Bullet_44Magnum_HP</cookOffProjectile>
@@ -97,8 +97,8 @@
 		<defName>Bullet_44Magnum_FMJ</defName>
 		<label>.44 Magnum bullet (FMJ)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>15</damageAmountBase>
-			<armorPenetrationSharp>8</armorPenetrationSharp>
+			<damageAmountBase>17</damageAmountBase>
+			<armorPenetrationSharp>5</armorPenetrationSharp>
 			<armorPenetrationBlunt>23.280</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
@@ -107,8 +107,8 @@
 		<defName>Bullet_44Magnum_AP</defName>
 		<label>.44 Magnum bullet (AP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>10</damageAmountBase>
-			<armorPenetrationSharp>16</armorPenetrationSharp>
+			<damageAmountBase>11</damageAmountBase>
+			<armorPenetrationSharp>10</armorPenetrationSharp>
 			<armorPenetrationBlunt>23.280</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
@@ -117,8 +117,8 @@
 		<defName>Bullet_44Magnum_HP</defName>
 		<label>.44 Magnum bullet (HP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>19</damageAmountBase>
-			<armorPenetrationSharp>4</armorPenetrationSharp>
+			<damageAmountBase>26</damageAmountBase>
+			<armorPenetrationSharp>3</armorPenetrationSharp>
 			<armorPenetrationBlunt>23.280</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
@@ -127,8 +127,8 @@
 
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_44Magnum_FMJ</defName>
-		<label>make .44 Magnum (FMJ) cartridge x500</label>
-		<description>Craft 500 .44 Magnum (FMJ) cartridges.</description>
+		<label>make .44 Magnum (FMJ) cartridge x200</label>
+		<description>Craft 200 .44 Magnum (FMJ) cartridges.</description>
 		<jobString>Making .44 Magnum (FMJ) cartridges.</jobString>
 		<ingredients>
 			<li>
@@ -137,7 +137,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>24</count>
+				<count>20</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -146,15 +146,15 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_44Magnum_FMJ>500</Ammo_44Magnum_FMJ>
+			<Ammo_44Magnum_FMJ>200</Ammo_44Magnum_FMJ>
 		</products>
 		<workAmount>2400</workAmount>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_44Magnum_AP</defName>
-		<label>make .44 Magnum (AP) cartridge x500</label>
-		<description>Craft 500 .44 Magnum (AP) cartridges.</description>
+		<label>make .44 Magnum (AP) cartridge x200</label>
+		<description>Craft 200 .44 Magnum (AP) cartridges.</description>
 		<jobString>Making .44 Magnum (AP) cartridges.</jobString>
 		<ingredients>
 			<li>
@@ -163,24 +163,33 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>24</count>
+				<count>20</count>
 			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>Steel</li>
-			</thingDefs>
-		</fixedIngredientFilter>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Uranium</li>
+            </thingDefs>
+        </fixedIngredientFilter>
 		<products>
-			<Ammo_44Magnum_AP>500</Ammo_44Magnum_AP>
+			<Ammo_44Magnum_AP>200</Ammo_44Magnum_AP>
 		</products>
 		<workAmount>2400</workAmount>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_44Magnum_HP</defName>
-		<label>make .44 Magnum (HP) cartridge x500</label>
-		<description>Craft 500 .44 Magnum (HP) cartridges.</description>
+		<label>make .44 Magnum (HP) cartridge x200</label>
+		<description>Craft 200 .44 Magnum (HP) cartridges.</description>
 		<jobString>Making .44 Magnum (HP) cartridges.</jobString>
 		<ingredients>
 			<li>
@@ -189,16 +198,25 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>24</count>
+				<count>20</count>
 			</li>
-		</ingredients>
-		<fixedIngredientFilter>
-			<thingDefs>
-				<li>Steel</li>
-			</thingDefs>
-		</fixedIngredientFilter>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>Steel</li>
+                <li>Plasteel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
 		<products>
-			<Ammo_44Magnum_HP>500</Ammo_44Magnum_HP>
+			<Ammo_44Magnum_HP>200</Ammo_44Magnum_HP>
 		</products>
 		<workAmount>2400</workAmount>
 	</RecipeDef>

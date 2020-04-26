@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <ThingCategoryDef>
     <defName>Ammo81mmMortarShells</defName>
@@ -57,7 +57,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>55.09</MarketValue>
+      <MarketValue>95.09</MarketValue>
       <Mass>5.27</Mass>
       <Bulk>8.17</Bulk>
     </statBases>
@@ -85,7 +85,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>42.34</MarketValue>
+      <MarketValue>142.34</MarketValue>
       <Mass>4.1</Mass>
       <Bulk>10.01</Bulk>
     </statBases>
@@ -113,7 +113,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>112.42</MarketValue>
+      <MarketValue>212.42</MarketValue>
       <Mass>5.27</Mass>
       <Bulk>8.17</Bulk>
     </statBases>
@@ -246,7 +246,7 @@
       <damageAmountBase>156</damageAmountBase>
       <armorPenetrationSharp>0</armorPenetrationSharp>
       <armorPenetrationBlunt>0</armorPenetrationBlunt>
-      <explosionRadius>2.5</explosionRadius>
+      <explosionRadius>3.5</explosionRadius>
       <flyOverhead>true</flyOverhead>
       <soundExplode>MortarBomb_Explode</soundExplode>
       <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
@@ -295,7 +295,7 @@
       <armorPenetrationSharp>0</armorPenetrationSharp>
       <armorPenetrationBlunt>0</armorPenetrationBlunt>
       <flyOverhead>true</flyOverhead>
-      <explosionRadius>5.5</explosionRadius>
+      <explosionRadius>7.5</explosionRadius>
     </projectile>
   </ThingDef>
 
@@ -310,7 +310,7 @@
       <damageDef>Extinguish</damageDef>
       <armorPenetrationSharp>0</armorPenetrationSharp>
       <armorPenetrationBlunt>0</armorPenetrationBlunt>
-      <explosionRadius>9.5</explosionRadius>
+      <explosionRadius>14.5</explosionRadius>
       <flyOverhead>true</flyOverhead>
       <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
       <soundExplode>Explosion_EMP</soundExplode>
@@ -362,7 +362,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>54</count>
+        <count>50</count>
       </li>
       <li>
         <filter>
@@ -370,7 +370,7 @@
             <li>FSX</li>
           </thingDefs>
         </filter>
-        <count>10</count>
+        <count>50</count>
       </li>
       <li>
         <filter>
@@ -406,7 +406,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>58</count>
+        <count>50</count>
       </li>
       <li>
         <filter>
@@ -414,7 +414,7 @@
             <li>Prometheum</li>
           </thingDefs>
         </filter>
-        <count>5</count>
+        <count>50</count>
       </li>
       <li>
         <filter>
@@ -450,7 +450,15 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>54</count>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Uranium</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -458,12 +466,13 @@
             <li>ComponentIndustrial</li>
           </thingDefs>
         </filter>
-        <count>14</count>
+        <count>8</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Steel</li>
+        <li>Uranium</li>
         <li>ComponentIndustrial</li>
       </thingDefs>
     </fixedIngredientFilter>
@@ -486,7 +495,7 @@
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>42</count>
+        <count>50</count>
       </li>
       <li>
         <filter>
@@ -498,21 +507,19 @@
       </li>
       <li>
         <filter>
-          <categories>
-            <li>MeatRaw</li>
-          </categories>
+          <thingDefs>
+            <li>Silver</li>
+          </thingDefs>
         </filter>
-        <count>17</count>
+        <count>50</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Steel</li>
         <li>ComponentIndustrial</li>
+        <li>Silver</li>
       </thingDefs>
-      <categories>
-        <li>MeatRaw</li>
-      </categories>
     </fixedIngredientFilter>
     <products>
       <Shell_Firefoam>5</Shell_Firefoam>

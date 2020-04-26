@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <ThingCategoryDef>
@@ -31,6 +31,7 @@
     </thingCategories>
     <tradeTags>
       <li>CE_AutoEnableTrade_Sellable</li>
+      <li>CE_AutoEnableCrafting</li>
     </tradeTags>
     <stackLimit>5000</stackLimit>	
   </ThingDef>
@@ -43,7 +44,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>0.71</MarketValue>
+      <MarketValue>2</MarketValue>
     </statBases>
     <ammoClass>Charged</ammoClass>
   </ThingDef>
@@ -70,10 +71,38 @@
         </li>
       </secondaryDamage>
       <armorPenetrationSharp>30</armorPenetrationSharp>
-      <armorPenetrationBlunt>40</armorPenetrationBlunt>
+      <armorPenetrationBlunt>60</armorPenetrationBlunt>
     </projectile>
   </ThingDef>
 
   <!-- ==================== Recipes ========================== -->
+  
+  <RecipeDef ParentName="ChargeAmmoRecipeBase">
+    <defName>MakeAmmo_5x35mmCharged</defName>
+    <label>Breakdown 5x35mm Charged x200</label>
+    <description>Breakdown 5x35mm Charged cartridges for parts.</description>
+    <jobString>Breaking down 5x35mm Charged cartridges.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Ammo_5x35mmCharged</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Ammo_5x35mmCharged</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+	  <Steel>50</Steel>
+	  <Plasteel>20</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </products>
+    <workAmount>3400</workAmount>
+  </RecipeDef>
 
 </Defs>

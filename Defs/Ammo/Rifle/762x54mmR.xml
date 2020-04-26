@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
 	<ThingCategoryDef>
@@ -48,7 +48,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.12</MarketValue>
+			<MarketValue>1</MarketValue>
 		</statBases>
 		<ammoClass>FullMetalJacket</ammoClass>
 		<cookOffProjectile>Bullet_762x54mmR_FMJ</cookOffProjectile>
@@ -62,7 +62,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.12</MarketValue>
+			<MarketValue>3</MarketValue>
 		</statBases>
 		<ammoClass>ArmorPiercing</ammoClass>
 		<cookOffProjectile>Bullet_762x54mmR_AP</cookOffProjectile>
@@ -76,7 +76,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<statBases>
-			<MarketValue>0.12</MarketValue>
+			<MarketValue>3</MarketValue>
 		</statBases>
 		<ammoClass>HollowPoint</ammoClass>
 		<cookOffProjectile>Bullet_762x54mmR_HP</cookOffProjectile>
@@ -90,7 +90,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>0.15</MarketValue>
+      <MarketValue>9</MarketValue>
     </statBases>
     <ammoClass>IncendiaryAP</ammoClass>
     <cookOffProjectile>Bullet_762x54mmR_Incendiary</cookOffProjectile>
@@ -104,7 +104,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>0.22</MarketValue>
+      <MarketValue>13</MarketValue>
     </statBases>
     <ammoClass>ExplosiveAP</ammoClass>
     <cookOffProjectile>Bullet_762x54mmR_HE</cookOffProjectile>
@@ -118,7 +118,7 @@
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <statBases>
-      <MarketValue>0.13</MarketValue>
+      <MarketValue>18</MarketValue>
 	  <Mass>0.022</Mass>
     </statBases>
     <ammoClass>Sabot</ammoClass>
@@ -153,8 +153,8 @@
 		<defName>Bullet_762x54mmR_AP</defName>
 		<label>7.62mmR bullet (AP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
-			<damageAmountBase>12</damageAmountBase>
-			<armorPenetrationSharp>14</armorPenetrationSharp>
+			<damageAmountBase>14</damageAmountBase>
+			<armorPenetrationSharp>16</armorPenetrationSharp>
 			<armorPenetrationBlunt>67.340</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
@@ -164,7 +164,7 @@
 		<label>7.62mmR bullet (HP)</label>
 		<projectile Class="CombatExtended.ProjectilePropertiesCE">
 			<damageAmountBase>25</damageAmountBase>
-			<armorPenetrationSharp>4</armorPenetrationSharp>
+			<armorPenetrationSharp>5</armorPenetrationSharp>
 			<armorPenetrationBlunt>67.340</armorPenetrationBlunt>
 		</projectile>
 	</ThingDef>
@@ -173,13 +173,13 @@
     <defName>Bullet_762x54mmR_Incendiary</defName>
     <label>7.62mmR bullet (AP-I)</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <damageAmountBase>12</damageAmountBase>
-      <armorPenetrationSharp>14</armorPenetrationSharp>
-	  <armorPenetrationBlunt>67.340</armorPenetrationBlunt>
+      <damageAmountBase>14</damageAmountBase>
+      <armorPenetrationSharp>17</armorPenetrationSharp>
+	  <armorPenetrationBlunt>71.340</armorPenetrationBlunt>
       <secondaryDamage>
         <li>
           <def>Flame_Secondary</def>
-          <amount>8</amount>
+          <amount>10</amount>
         </li>
       </secondaryDamage>
     </projectile>
@@ -190,12 +190,12 @@
     <label>7.62mmR bullet (HE)</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
       <damageAmountBase>20</damageAmountBase>
-      <armorPenetrationSharp>7</armorPenetrationSharp>
+      <armorPenetrationSharp>17</armorPenetrationSharp>
 	  	<armorPenetrationBlunt>67.340</armorPenetrationBlunt>
 		  <secondaryDamage>
 				<li>
 			  	<def>Bomb_Secondary</def>
-			  	<amount>12</amount>
+			  	<amount>15</amount>
 				</li>
 		  </secondaryDamage>
     </projectile>
@@ -205,8 +205,8 @@
     <defName>Bullet_762x54mmR_Sabot</defName>
     <label>7.62mmR bullet (Sabot)</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <damageAmountBase>10</damageAmountBase>
-      <armorPenetrationSharp>25</armorPenetrationSharp>
+      <damageAmountBase>15</damageAmountBase>
+      <armorPenetrationSharp>28</armorPenetrationSharp>
       <armorPenetrationBlunt>87.280</armorPenetrationBlunt>
       <speed>249</speed>
     </projectile>
@@ -216,8 +216,8 @@
 
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_762x54mmR_FMJ</defName>
-		<label>make 7.62x54mmR (FMJ) cartridge x500</label>
-		<description>Craft 500 7.62x54mmR (FMJ) cartridges.</description>
+		<label>make 7.62x54mmR (FMJ) cartridge x100</label>
+		<description>Craft 100 7.62x54mmR (FMJ) cartridges.</description>
 		<jobString>Making 7.62x54mmR (FMJ) cartridges.</jobString>
 		<ingredients>
 			<li>
@@ -226,7 +226,7 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>28</count>
+				<count>30</count>
 			</li>
 		</ingredients>
 		<fixedIngredientFilter>
@@ -235,15 +235,15 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_762x54mmR_FMJ>500</Ammo_762x54mmR_FMJ>
+			<Ammo_762x54mmR_FMJ>100</Ammo_762x54mmR_FMJ>
 		</products>
 		<workAmount>2800</workAmount>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_762x54mmR_AP</defName>
-		<label>make 7.62x54mmR (AP) cartridge x500</label>
-		<description>Craft 500 7.62x54mmR (AP) cartridges.</description>
+		<label>make 7.62x54mmR (AP) cartridge x100</label>
+		<description>Craft 100 7.62x54mmR (AP) cartridges.</description>
 		<jobString>Making 7.62x54mmR (AP) cartridges.</jobString>
 		<ingredients>
 			<li>
@@ -252,24 +252,33 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>28</count>
+				<count>30</count>
 			</li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Uranium</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Steel</li>
+                <li>Uranium</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_762x54mmR_AP>500</Ammo_762x54mmR_AP>
+			<Ammo_762x54mmR_AP>100</Ammo_762x54mmR_AP>
 		</products>
-		<workAmount>2800</workAmount>
+		<workAmount>2200</workAmount>
 	</RecipeDef>
 
 	<RecipeDef ParentName="AmmoRecipeBase">
 		<defName>MakeAmmo_762x54mmR_HP</defName>
-		<label>make 7.62x54mmR (HP) cartridge x500</label>
-		<description>Craft 500 7.62x54mmR (HP) cartridges.</description>
+		<label>make 7.62x54mmR (HP) cartridge x100</label>
+		<description>Craft 100 7.62x54mmR (HP) cartridges.</description>
 		<jobString>Making 7.62x54mmR (HP) cartridges.</jobString>
 		<ingredients>
 			<li>
@@ -278,42 +287,51 @@
 						<li>Steel</li>
 					</thingDefs>
 				</filter>
-				<count>28</count>
+				<count>30</count>
 			</li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Plasteel</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
 				<li>Steel</li>
+                <li>Plasteel</li>
 			</thingDefs>
 		</fixedIngredientFilter>
 		<products>
-			<Ammo_762x54mmR_HP>500</Ammo_762x54mmR_HP>
+			<Ammo_762x54mmR_HP>100</Ammo_762x54mmR_HP>
 		</products>
 		<workAmount>2800</workAmount>
 	</RecipeDef>
 
   <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_762x54mmR_Incendiary</defName>
-    <label>make 7.62x54mmR (AP-I) cartridge x500</label>
-    <description>Craft 500 7.62x54mmR (AP-I) cartridges.</description>
+    <label>make 7.62x54mmR (AP-I) cartridge x100</label>
+    <description>Craft 100 7.62x54mmR (AP-I) cartridges.</description>
     <jobString>Making 7.62x54mmR (AP-I) cartridges.</jobString>
     <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Steel</li>
-          </thingDefs>
-        </filter>
-        <count>28</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Prometheum</li>
-          </thingDefs>
-        </filter>
-        <count>3</count>
-      </li>
+     <li>
+          <filter>
+            <thingDefs>
+              <li>Steel</li>
+            </thingDefs>
+          </filter>
+          <count>30</count>
+        </li>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>Prometheum</li>
+            </thingDefs>
+          </filter>
+          <count>20</count>
+        </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
@@ -322,24 +340,24 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_762x54mmR_Incendiary>500</Ammo_762x54mmR_Incendiary>
+      <Ammo_762x54mmR_Incendiary>100</Ammo_762x54mmR_Incendiary>
     </products>
     <workAmount>4000</workAmount>
   </RecipeDef>
   
   <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_762x54mmR_HE</defName>
-    <label>make 7.62x54mmR (HE) cartridge x500</label>
-    <description>Craft 500 7.62x54mmR (HE) cartridges.</description>
+    <label>make 7.62x54mmR (HE) cartridge x100</label>
+    <description>Craft 100 7.62x54mmR (HE) cartridges.</description>
     <jobString>Making 7.62x54mmR (HE) cartridges.</jobString>
     <ingredients>
-      <li>
+            <li>
         <filter>
           <thingDefs>
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>28</count>
+        <count>30</count>
       </li>
       <li>
         <filter>
@@ -347,7 +365,7 @@
             <li>FSX</li>
           </thingDefs>
         </filter>
-        <count>5</count>
+        <count>20</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -357,24 +375,24 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_762x54mmR_HE>500</Ammo_762x54mmR_HE>
+      <Ammo_762x54mmR_HE>100</Ammo_762x54mmR_HE>
     </products>
     <workAmount>4800</workAmount>
   </RecipeDef>
   
   <RecipeDef ParentName="AmmoRecipeBase">
     <defName>MakeAmmo_762x54mmR_Sabot</defName>
-    <label>make 7.62x54mmR (Sabot) cartridge x500</label>
-    <description>Craft 500 7.62x54mmR (Sabot) cartridges.</description>
+    <label>make 7.62x54mmR (Sabot) cartridge x100</label>
+    <description>Craft 100 7.62x54mmR (Sabot) cartridges.</description>
     <jobString>Making 7.62x54mmR (Sabot) cartridges.</jobString>
-    <ingredients>
+  <ingredients>
       <li>
         <filter>
           <thingDefs>
             <li>Steel</li>
           </thingDefs>
         </filter>
-        <count>18</count>
+        <count>30</count>
       </li>
       <li>
         <filter>
@@ -382,26 +400,26 @@
             <li>Uranium</li>
           </thingDefs>
         </filter>
-        <count>3</count>
+        <count>5</count>
       </li>
       <li>
         <filter>
           <thingDefs>
-            <li>Chemfuel</li>
+            <li>Plasteel</li>
           </thingDefs>
         </filter>
-        <count>3</count>
-      </li>		  
+        <count>5</count>
+      </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>Steel</li>
+      <li>Steel</li>
         <li>Uranium</li>
-        <li>Chemfuel</li>		
+        <li>Plasteel</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Ammo_762x54mmR_Sabot>500</Ammo_762x54mmR_Sabot>
+      <Ammo_762x54mmR_Sabot>100</Ammo_762x54mmR_Sabot>
     </products>
     <workAmount>3600</workAmount>
   </RecipeDef>

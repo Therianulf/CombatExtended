@@ -123,7 +123,9 @@ namespace CombatExtended.CombatExtended.Jobs.Utils
 			//ThingFilter filter = refuelable.TryGetComp<CompRefuelable>().Props.fuelFilter;
 			var requestedAmmo = reloadable.CompAmmo.SelectedAmmo;
 
+
 			Predicate<Thing> validator = (Thing potentialAmmo) =>
+
 			{
 				if (potentialAmmo.IsForbidden(pawn) || !pawn.CanReserve(potentialAmmo))
 				{
@@ -131,6 +133,7 @@ namespace CombatExtended.CombatExtended.Jobs.Utils
 				}
 				return GetPathCost(pawn, potentialAmmo) <= MaxPathCost;
 			};
+
 
 			return GenClosest.ClosestThingReachable(pawn.Position, pawn.Map, ThingRequest.ForDef(requestedAmmo), PathEndMode.ClosestTouch, TraverseParms.For(pawn), 9999f, validator);
 		}
@@ -147,13 +150,16 @@ namespace CombatExtended.CombatExtended.Jobs.Utils
 		{
 			int quantity = reloadable.CompAmmo.MissingToFullMagazine;
 			var ammoKind = reloadable.CompAmmo.SelectedAmmo;
+
 			Predicate<Thing> validator = (Thing potentialAmmo) =>
+
 			{
 				if (potentialAmmo.IsForbidden(pawn) || !pawn.CanReserve(potentialAmmo))
 				{
 					return false;
 				}
 				return GetPathCost(pawn, potentialAmmo) <= MaxPathCost;
+
 			};
 			Region region = reloadable.Position.GetRegion(pawn.Map);
 			TraverseParms traverseParams = TraverseParms.For(pawn);
@@ -161,6 +167,7 @@ namespace CombatExtended.CombatExtended.Jobs.Utils
 			var chosenThings = new List<Thing>();
 			int accumulatedQuantity = 0;
 			Verse.RegionProcessor regionProcessor = (Region r) =>
+
 			{
 				List<Thing> list = r.ListerThings.ThingsMatching(ThingRequest.ForDef(ammoKind));
 				foreach (var thing in list)
@@ -176,7 +183,9 @@ namespace CombatExtended.CombatExtended.Jobs.Utils
 					}
 				}
 				return false;
+
 			};
+
 			RegionTraverser.BreadthFirstTraverse(region, entryCondition, regionProcessor, 99999);
 			if (accumulatedQuantity >= quantity)
 			{

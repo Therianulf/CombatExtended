@@ -95,7 +95,7 @@
     <statBases>
       <Mass>0.236</Mass>
       <Bulk>0.61</Bulk>
-      <MarketValue>8.33</MarketValue>
+      <MarketValue>61.33</MarketValue>
       <SightsEfficiency>0.65</SightsEfficiency>
       <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
     </statBases>
@@ -111,7 +111,7 @@
         <label>throw flashbang grenade</label>
         <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <range>10</range>
+        <range>12</range>
         <warmupTime>0.8</warmupTime>
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
@@ -125,12 +125,12 @@
       </li>
     </verbs>
     <comps>
-	  <li Class="CombatExtended.CompProperties_ExplosiveCE">
-		<damageAmountBase>25</damageAmountBase>
-		<explosiveDamageType>Stun</explosiveDamageType>
-		<explosiveRadius>4</explosiveRadius>
+      <li Class="CombatExtended.CompProperties_ExplosiveCE">
+        <damageAmountBase>25</damageAmountBase>
+        <explosiveDamageType>Stun</explosiveDamageType>
+        <explosiveRadius>5</explosiveRadius>
         <explosionSound>Explosion_Stun</explosionSound>
-	  </li>
+      </li>
     </comps>
   </ThingDef>
 
@@ -197,7 +197,7 @@
         <ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
       </li>
     </verbs>
-	<detonateProjectile>Proj_GrenadeStickBomb</detonateProjectile>
+    <detonateProjectile>Proj_GrenadeStickBomb</detonateProjectile>
   </ThingDef>
 
   <!-- ==================== Smoke grenade ========================== -->
@@ -235,13 +235,13 @@
     <statBases>
       <Mass>0.539</Mass>
       <Bulk>1.05</Bulk>
-      <MarketValue>8.33</MarketValue>
+      <MarketValue>12.33</MarketValue>
       <SightsEfficiency>0.65</SightsEfficiency>
       <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
     </statBases>
     <weaponTags>
       <li>CE_AI_Nonlethal</li>
-      <li>GrenadeSmoke</li>	  
+      <li>GrenadeSmoke</li>   
     </weaponTags>
     <thingCategories>
       <li>Grenades</li>
@@ -251,7 +251,7 @@
         <label>throw smoke grenade</label>
         <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <range>10</range>
+        <range>12</range>
         <warmupTime>0.8</warmupTime>
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
@@ -265,12 +265,12 @@
       </li>
     </verbs>
     <comps>
-	  <li Class="CombatExtended.CompProperties_ExplosiveCE">
-		<damageAmountBase>4</damageAmountBase>
-		<explosiveDamageType>Smoke</explosiveDamageType>
+      <li Class="CombatExtended.CompProperties_ExplosiveCE">
+        <damageAmountBase>5</damageAmountBase>
+        <explosiveDamageType>Smoke</explosiveDamageType>
         <postExplosionSpawnThingDef>Gas_Smoke</postExplosionSpawnThingDef>
         <preExplosionSpawnChance>1</preExplosionSpawnChance>
-	  </li>
+      </li>
     </comps>
   </ThingDef>
 
@@ -309,7 +309,7 @@
     <statBases>
       <Mass>0.5</Mass>
       <Bulk>1.05</Bulk>
-      <MarketValue>11.52</MarketValue>
+      <MarketValue>21.52</MarketValue>
       <SightsEfficiency>0.65</SightsEfficiency>
       <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
     </statBases>
@@ -324,7 +324,7 @@
         <label>throw firefoam grenade</label>
         <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-        <range>10</range>
+        <range>14</range>
         <warmupTime>0.8</warmupTime>
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
@@ -338,13 +338,13 @@
       </li>
     </verbs>
     <comps>
-	  <li Class="CombatExtended.CompProperties_ExplosiveCE">
-		<explosiveDamageType>Extinguish</explosiveDamageType>
-		<explosiveRadius>6.5</explosiveRadius>
+      <li Class="CombatExtended.CompProperties_ExplosiveCE">
+        <explosiveDamageType>Extinguish</explosiveDamageType>
+        <explosiveRadius>8.5</explosiveRadius>
         <postExplosionSpawnThingDef>Filth_FireFoam</postExplosionSpawnThingDef>
         <postExplosionSpawnChance>1</postExplosionSpawnChance>
         <postExplosionSpawnThingCount>3</postExplosionSpawnThingCount>
-	  </li>
+      </li>
     </comps>
   </ThingDef>
 
