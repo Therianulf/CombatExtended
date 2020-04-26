@@ -127,11 +127,11 @@
     <defName>Bullet_6x24mmCharged_Ion</defName>
     <label>6x24mm Charged bullet (Ion)</label>
     <projectile Class="CombatExtended.ProjectilePropertiesCE">
-      <damageAmountBase>17</damageAmountBase>
+      <damageAmountBase>9</damageAmountBase>
       <secondaryDamage>
         <li>
           <def>EMP</def>
-          <amount>8</amount>
+          <amount>18</amount>
         </li>
       </secondaryDamage>
       <armorPenetrationSharp>30</armorPenetrationSharp>
