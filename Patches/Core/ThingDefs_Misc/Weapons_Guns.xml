@@ -218,13 +218,13 @@
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
       <warmupTime>0.6</warmupTime>
-      <range>16</range>
+      <range>14</range>
       <soundCast>Shot_Shotgun</soundCast>
       <soundCastTail>GunTail_Heavy</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
     </Properties>
     <AmmoUser>
-      <magazineSize>5</magazineSize>
+      <magazineSize>6</magazineSize>
       <reloadOneAtATime>true</reloadOneAtATime>
       <reloadTime>0.85</reloadTime>
       <ammoSet>AmmoSet_12Gauge</ammoSet>
@@ -269,7 +269,7 @@
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>Bullet_12Gauge_Buck</defaultProjectile>
       <warmupTime>0.6</warmupTime>
-      <range>16</range>
+      <range>14</range>
       <soundCast>Shot_Shotgun</soundCast>
       <soundCastTail>GunTail_Heavy</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
@@ -483,7 +483,7 @@
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
       <warmupTime>0.6</warmupTime>
-      <range>12</range>
+      <range>16</range>
       <burstShotCount>6</burstShotCount>
       <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
       <soundCast>Shot_MachinePistol</soundCast>
@@ -541,7 +541,7 @@
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>Bullet_45ACP_FMJ</defaultProjectile>
       <warmupTime>0.6</warmupTime>
-      <range>15</range>
+      <range>18</range>
       <burstShotCount>6</burstShotCount>
       <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
       <soundCast>Shot_HeavySMG</soundCast>
@@ -650,7 +650,7 @@
     </statBases>
     <costList>
       <Steel>85</Steel>
-      <WoodLog>10</WoodLog>
+      <WoodLog>30</WoodLog>
       <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
     <Properties>
@@ -705,7 +705,7 @@
     <statBases>
       <Mass>3.0</Mass>
       <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
-      <SightsEfficiency>1.10</SightsEfficiency>
+      <SightsEfficiency>1.20</SightsEfficiency>
       <ShotSpread>0.08</ShotSpread>
       <SwayFactor>1.20</SwayFactor>
       <Bulk>7.00</Bulk>
@@ -714,6 +714,8 @@
     <costList>
       <Steel>45</Steel>
       <Plasteel>25</Plasteel>
+	  <Silver>100</Silver>
+	  <Gold>20</Gold>
       <ComponentIndustrial>10</ComponentIndustrial>
       <Chemfuel>10</Chemfuel>
     </costList>
@@ -761,8 +763,8 @@
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>Gun_MiniTurret</defName>
     <statBases>
-      <RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
-      <SightsEfficiency>1</SightsEfficiency>
+      <RangedWeapon_Cooldown>0.55</RangedWeapon_Cooldown>
+      <SightsEfficiency>1.1</SightsEfficiency>
       <ShotSpread>0.07</ShotSpread>
       <SwayFactor>0.82</SwayFactor>
       <Bulk>10.00</Bulk>
@@ -772,10 +774,10 @@
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>Bullet_556x45mmNATO_FMJ</defaultProjectile>
-      <warmupTime>1.3</warmupTime>
+      <warmupTime>1.05</warmupTime>
       <range>48</range>
       <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-      <burstShotCount>10</burstShotCount>
+      <burstShotCount>5</burstShotCount>
       <soundCast>GunShotA</soundCast>
       <soundCastTail>GunTail_Light</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
@@ -783,7 +785,7 @@
     </Properties>
     <AmmoUser>
       <magazineSize>100</magazineSize>
-      <reloadTime>7.8</reloadTime>
+      <reloadTime>7.5</reloadTime>
       <ammoSet>AmmoSet_556x45mmNATO</ammoSet>
     </AmmoUser>
     <FireModes>
@@ -1019,8 +1021,8 @@
       <projectile Class="CombatExtended.ProjectilePropertiesCE">
         <damageDef>Bomb</damageDef>
         <damageAmountBase>180</damageAmountBase>
-        <explosionRadius>3.0</explosionRadius>
-        <speed>100</speed>
+        <explosionRadius>5.0</explosionRadius>
+        <speed>130</speed>
       </projectile>
     </value>
   </Operation>
@@ -1060,7 +1062,7 @@
     <statBases>
       <Mass>12.00</Mass>
       <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
-      <SightsEfficiency>1</SightsEfficiency>
+      <SightsEfficiency>1.2</SightsEfficiency>
       <ShotSpread>0.2</ShotSpread>
       <SwayFactor>2.20</SwayFactor>
       <Bulk>13.00</Bulk>
@@ -1068,15 +1070,15 @@
     </statBases>
     <costList>
       <Steel>90</Steel>
-      <ComponentIndustrial>7</ComponentIndustrial>
-      <FSX>3</FSX>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <FSX>30</FSX>
     </costList>
     <Properties>
       <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>Bullet_Rocket</defaultProjectile>
       <warmupTime>1.9</warmupTime>
-      <range>40</range>
+      <range>45</range>
       <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
       <burstShotCount>3</burstShotCount>
       <soundCast>InfernoCannon_Fire</soundCast>
@@ -1115,7 +1117,7 @@
     <defName>Gun_ChargeBlasterHeavy</defName>
     <statBases>
       <Mass>35.00</Mass>
-      <RangedWeapon_Cooldown>0.36</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>0.46</RangedWeapon_Cooldown>
       <SightsEfficiency>1</SightsEfficiency>
       <ShotSpread>0.01</ShotSpread>
       <SwayFactor>1.33</SwayFactor>
@@ -1126,21 +1128,21 @@
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>Bullet_12x64mmCharged</defaultProjectile>
-      <warmupTime>1.3</warmupTime>
-      <range>75</range>
+      <warmupTime>2.3</warmupTime>
+      <range>65</range>
       <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-      <burstShotCount>20</burstShotCount>
+      <burstShotCount>50</burstShotCount>
       <soundCast>Shot_ChargeBlaster</soundCast>
       <soundCastTail>GunTail_Heavy</soundCastTail>
       <muzzleFlashScale>9</muzzleFlashScale>
     </Properties>
     <AmmoUser>
-      <magazineSize>100</magazineSize>
-      <reloadTime>9.2</reloadTime>
+      <magazineSize>300</magazineSize>
+      <reloadTime>11.2</reloadTime>
       <ammoSet>AmmoSet_12x64mmCharged</ammoSet>
     </AmmoUser>
     <FireModes>
-      <aimedBurstShotCount>5</aimedBurstShotCount>
+      <aimedBurstShotCount>15</aimedBurstShotCount>
       <aiAimMode>AimedShot</aiAimMode>
     </FireModes>
     <weaponTags>
@@ -1157,7 +1159,7 @@
           <capacities>
             <li>Blunt</li>
           </capacities>
-          <power>10</power>
+          <power>14</power>
           <cooldownTime>2.44</cooldownTime>
           <armorPenetrationBlunt>3.5</armorPenetrationBlunt>
           <linkedBodyPartsGroup>Barrel</linkedBodyPartsGroup>
@@ -1183,7 +1185,7 @@
     <statBases>
       <Mass>300.00</Mass>
       <RangedWeapon_Cooldown>2.53</RangedWeapon_Cooldown>
-      <SightsEfficiency>1</SightsEfficiency>
+      <SightsEfficiency>0.80</SightsEfficiency>
       <ShotSpread>0.01</ShotSpread>
       <SwayFactor>0.82</SwayFactor>
       <Bulk>20.00</Bulk>
@@ -1192,8 +1194,8 @@
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
       <defaultProjectile>Bullet_80x256mmFuel_Thermobaric</defaultProjectile>
-      <warmupTime>4.3</warmupTime>
-      <range>86</range>
+      <warmupTime>8.3</warmupTime>
+      <range>70</range>
       <burstShotCount>1</burstShotCount>
       <soundCast>InfernoCannon_Fire</soundCast>
       <soundCastTail>GunTail_Light</soundCastTail>
@@ -1204,7 +1206,7 @@
     </Properties>
     <AmmoUser>
       <magazineSize>1</magazineSize>
-      <reloadTime>9.8</reloadTime>
+      <reloadTime>14.8</reloadTime>
       <ammoSet>AmmoSet_80x256mmFuel</ammoSet>
     </AmmoUser>
     <FireModes>

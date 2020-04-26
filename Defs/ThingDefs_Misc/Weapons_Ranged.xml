@@ -14,7 +14,7 @@
     <soundInteract>Interact_Rifle</soundInteract>
     <statBases>
       <WorkToMake>9000</WorkToMake>	
-      <SightsEfficiency>1</SightsEfficiency>
+      <SightsEfficiency>1.1</SightsEfficiency>
       <ShotSpread>0.16</ShotSpread>
       <SwayFactor>1.00</SwayFactor>
       <Bulk>7.31</Bulk>
