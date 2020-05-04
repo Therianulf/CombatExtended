@@ -17,3 +17,6 @@ UnityEngine.dll
 
 .idea/
 .vs/slnx.sqlite
+.DS_Store
+*/.DS_Store
+Defs/.DS_Store
