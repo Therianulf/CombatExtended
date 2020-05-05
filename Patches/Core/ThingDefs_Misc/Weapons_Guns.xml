@@ -1250,12 +1250,12 @@
   <Operation Class="CombatExtended.PatchOperationMakeGunCECompatible">
     <defName>Gun_ChargeLance</defName>
     <statBases>
-      <Mass>8.00</Mass>
+      <Mass>2.00</Mass>
       <RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
       <SightsEfficiency>1</SightsEfficiency>
       <ShotSpread>0.01</ShotSpread>
       <SwayFactor>0.88</SwayFactor>
-      <Bulk>13.00</Bulk>
+      <Bulk>1.00</Bulk>
     </statBases>
     <Properties>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>

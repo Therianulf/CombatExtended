@@ -31,7 +31,6 @@ namespace CombatExtended
         {
 
             Predicate<Thing> _isTurretThatNeedsReloadingNow = (Thing t) =>
-
             {
                 var turret = t as Building_TurretGunCE;
                 if (turret == null) { return false; }
