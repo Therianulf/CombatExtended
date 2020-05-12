@@ -136,6 +136,7 @@
       </secondaryDamage>
       <armorPenetrationSharp>30</armorPenetrationSharp>
       <armorPenetrationBlunt>75.6</armorPenetrationBlunt>
+      <empShieldBreakChance>0.2</empShieldBreakChance>
     </projectile>
   </ThingDef>
 
