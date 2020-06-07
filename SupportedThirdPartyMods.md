@@ -41,6 +41,7 @@ Mod |
 [SS]Maid Project	|
 [SYR] Thrumkin	|
 A Dog Said...	|
+Alpha Animals |
 Android Tiers	|
 Android Tiers++	|
 Androids	|
@@ -68,6 +69,7 @@ Fate Grand Order - Styles Apparel Pack	|
 Ferrex Race	|
 Flak Dusters	|
 Forsakens	|
+Forsakens Fauna |
 Gas Traps And Shells	|
 Girls' Frontline Apparel Pack	|
 Girls' Frontline Styles - 404 Team	|
@@ -77,6 +79,7 @@ GouRIMet	|
 Hand 'n' Footwear	|
 High Caliber	|
 Jernfalk's Standalone Horses	|
+Kaiser Armory	|
 K.L.K - Styles Apparel Pack	|
 Kijin Race 2.0     	|     
 Kill la Kill Styles Pack    	|   
@@ -113,6 +116,7 @@ Spartan Foundry	|
 T-45b Power Armor	|
 TouhouStyle	|
 Trading Economy	|
+Tsar Armory	|
 Turret Collection	|
 Vanilla Apparel Expanded	|
 Vanilla Armour Expanded	|
