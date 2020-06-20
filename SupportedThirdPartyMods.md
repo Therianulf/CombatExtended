@@ -59,6 +59,7 @@ Defensive Machine Gun Turret Pack	|
 Dinosauria	|
 Dragonian Race	|
 Dragons!	|
+ED-Shields	|
 Equiums Horse Race	|
 Expanded Patchleather	|
 Expanded Prosthetics and Organ Engineering (EPOE)	|
@@ -95,9 +96,11 @@ MiningCo. MiningHelmet	|
 Misc. Robots	|
 More Mechanoids	|
 More Practical Traits	|
+More Vanilla Turrets	|
 Ni'Hal	|
 Orassans	|
 Penguin	|
+PsiTech	|
 Polarisbloc - Security Force	|
 Rabbie The Moonrabbit	|
 Racc Race	|
