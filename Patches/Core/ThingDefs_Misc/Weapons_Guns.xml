@@ -318,7 +318,7 @@
     <Properties>
       <verbClass>CombatExtended.Verb_ShootCE</verbClass>
       <hasStandardCommand>true</hasStandardCommand>
-      <defaultProjectile>Bullet_303British_FMJ</defaultProjectile>
+      <defaultProjectile>Bullet_762x54mmR_FMJ</defaultProjectile>
       <warmupTime>1.1</warmupTime>
       <range>55</range>
       <soundCast>Shot_BoltActionRifle</soundCast>
