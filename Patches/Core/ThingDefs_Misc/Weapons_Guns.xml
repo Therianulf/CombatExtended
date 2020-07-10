@@ -311,8 +311,8 @@
       <WorkToMake>12000</WorkToMake>
     </statBases>
     <costList>
-      <Steel>55</Steel>
-      <WoodLog>15</WoodLog>
+      <Steel>40</Steel>
+      <WoodLog>25</WoodLog>
       <ComponentIndustrial>1</ComponentIndustrial>
     </costList>
     <Properties>
@@ -326,9 +326,9 @@
       <muzzleFlashScale>9</muzzleFlashScale>
     </Properties>
     <AmmoUser>
-      <magazineSize>10</magazineSize>
-      <reloadTime>4.3</reloadTime>
-      <ammoSet>AmmoSet_303British</ammoSet>
+      <magazineSize>5</magazineSize>
+      <reloadTime>6.3</reloadTime>
+      <ammoSet>Bullet_762x54mmR_FMJ</ammoSet>
     </AmmoUser>
     <FireModes>
       <aiAimMode>AimedShot</aiAimMode>
