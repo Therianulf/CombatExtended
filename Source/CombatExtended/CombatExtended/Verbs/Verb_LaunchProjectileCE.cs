@@ -39,6 +39,7 @@ namespace CombatExtended
         protected CompAmmoUser compAmmo = null;
         protected CompFireModes compFireModes = null;
         protected CompChangeableProjectile compChangeable = null;
+        protected CompReloadable compReloadable = null;
         private float shotSpeed = -1;
 
         private float rotationDegrees = 0f;
@@ -153,7 +154,19 @@ namespace CombatExtended
             }
         }
 
-        private bool IsAttacking => ShooterPawn?.CurJobDef == JobDefOf.AttackStatic || ShooterPawn?.stances?.curStance is Stance_Warmup;
+        public CompReloadable CompReloadable
+        {
+            get
+            {
+                if (compReloadable == null && EquipmentSource != null)
+                {
+                    compReloadable = EquipmentSource.TryGetComp<CompReloadable>();
+                }
+                return compReloadable;
+            }
+        }
+
+        private bool IsAttacking => ShooterPawn?.CurJobDef == JobDefOf.AttackStatic || WarmingUp;
 
 
         #endregion
@@ -195,6 +208,10 @@ namespace CombatExtended
         /// </summary>
         public override void WarmupComplete()
         {
+            if (ShooterPawn != null && ShooterPawn.pather == null)
+            {
+                return; //Pawn has started a jump pack animation, or otherwise became despawned temporarily
+            }
             // attack shooting expression
             if ((ShooterPawn?.Spawned ?? false) && currentTarget.Thing is Pawn && Rand.Chance(0.25f))
             {
@@ -572,6 +589,10 @@ namespace CombatExtended
             if (CompAmmo != null && !CompAmmo.CanBeFiredNow)
             {
                 CompAmmo?.TryStartReload();
+            }
+            if (CompReloadable != null)
+            {
+                CompReloadable.UsedOnce();
             }
             return true;
         }

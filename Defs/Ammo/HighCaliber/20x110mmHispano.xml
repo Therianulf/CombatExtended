@@ -84,7 +84,7 @@
 
   <ThingDef Class="CombatExtended.AmmoDef" ParentName="Ammo20x110mmHispanoBase">
     <defName>Ammo_20x110mmHispano_Sabot</defName>
-    <label>14.5x114mm cartridge (Sabot)</label>
+    <label>20x110mm Hispano cartridge (Sabot)</label>
     <graphicData>
       <texPath>Things/Ammo/HighCaliber/Sabot</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -191,7 +191,7 @@
     <workAmount>10400</workAmount>
   </RecipeDef>
 
-  <RecipeDef ParentName="AmmoRecipeBase">
+  <RecipeDef ParentName="AdvancedAmmoRecipeBase">
     <defName>MakeAmmo_20x110mmHispano_Incendiary</defName>
     <label>make 20x110mm Hispano (AP-I) cartridge x200</label>
     <description>Craft 200 20x110mm Hispano (AP-I) cartridges.</description>
@@ -226,7 +226,7 @@
     <workAmount>15600</workAmount>
   </RecipeDef>
 
-  <RecipeDef ParentName="AmmoRecipeBase">
+  <RecipeDef ParentName="AdvancedAmmoRecipeBase">
     <defName>MakeAmmo_20x110mmHispano_HE</defName>
     <label>make 20x110mm Hispano (HE) cartridge x200</label>
     <description>Craft 200 20x110mm Hispano (HE) cartridges.</description>
@@ -262,7 +262,7 @@
   </RecipeDef>
 
 
-  <RecipeDef ParentName="AmmoRecipeBase">
+  <RecipeDef ParentName="AdvancedAmmoRecipeBase">
     <defName>MakeAmmo_20x110mmHispano_Sabot</defName>
     <label>make 20x110mm Hispano (Sabot) cartridge x200</label>
     <description>Craft 200 20x110mm Hispano (Sabot) cartridges.</description>

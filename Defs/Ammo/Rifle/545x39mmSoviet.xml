@@ -310,7 +310,7 @@
 		<workAmount>1200</workAmount>
 	</RecipeDef>
 
-  <RecipeDef ParentName="AmmoRecipeBase">
+  <RecipeDef ParentName="AdvancedAmmoRecipeBase">
     <defName>MakeAmmo_545x39mmSoviet_Incendiary</defName>
     <label>make 5.45x39mm Soviet (AP-I) cartridge x200</label>
     <description>Craft 200 5.45x39mm Soviet (AP-I) cartridges.</description>
@@ -345,7 +345,7 @@
     <workAmount>1600</workAmount>
   </RecipeDef>
   
-  <RecipeDef ParentName="AmmoRecipeBase">
+  <RecipeDef ParentName="AdvancedAmmoRecipeBase">
     <defName>MakeAmmo_545x39mmSoviet_HE</defName>
     <label>make 5.45x39mm Soviet (HE) cartridge x200</label>
     <description>Craft 200 5.45x39mm Soviet (HE) cartridges.</description>
@@ -380,7 +380,7 @@
     <workAmount>2800</workAmount>
   </RecipeDef>
   
-  <RecipeDef ParentName="AmmoRecipeBase">
+  <RecipeDef ParentName="AdvancedAmmoRecipeBase">
     <defName>MakeAmmo_545x39mmSoviet_Sabot</defName>
     <label>make 5.45x39mm Soviet (Sabot) cartridge x200</label>
     <description>Craft 200 5.45x39mm Soviet (Sabot) cartridges.</description>

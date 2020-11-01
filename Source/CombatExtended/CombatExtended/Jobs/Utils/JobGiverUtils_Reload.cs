@@ -65,12 +65,12 @@ namespace CombatExtended.CombatExtended.Jobs.Utils
 		{
 			if (pawn == null || hopefullyTurret == null)
 			{
-				CELogger.Error($"{pawn?.ToString() ?? "null pawn"} could not reload {hopefullyTurret?.ToString() ?? "null thing"} one of the two was null.");
+				CELogger.Warn($"{pawn?.ToString() ?? "null pawn"} could not reload {hopefullyTurret?.ToString() ?? "null thing"} one of the two was null.");
 				return false;
 			}
 			if (!(hopefullyTurret is Building_TurretGunCE))
 			{
-				CELogger.Error($"{pawn} could not reload {hopefullyTurret} because {hopefullyTurret} is not a Combat Extended Turret. If you are a modder, make sure to use {nameof(CombatExtended)}.{nameof(Building_TurretGunCE)} for your turret's compClass.");
+				CELogger.Warn($"{pawn} could not reload {hopefullyTurret} because {hopefullyTurret} is not a Combat Extended Turret. If you are a modder, make sure to use {nameof(CombatExtended)}.{nameof(Building_TurretGunCE)} for your turret's compClass.");
 				return false;
 			}
 			var turret = hopefullyTurret as Building_TurretGunCE;
@@ -78,7 +78,7 @@ namespace CombatExtended.CombatExtended.Jobs.Utils
 
 			if (compAmmo == null)
 			{
-				CELogger.Error($"{pawn} could not reload {turret} because turret has no {nameof(CompAmmoUser)}.");
+				CELogger.Warn($"{pawn} could not reload {turret} because turret has no {nameof(CompAmmoUser)}.");
 				return false;
 			}
 			if (turret.isReloading)
@@ -123,17 +123,13 @@ namespace CombatExtended.CombatExtended.Jobs.Utils
 			return true;
 		}
 
-		private static Thing FindBestAmmo(Pawn pawn, Building_TurretGunCE reloadable)
+		private static Thing FindBestAmmo(Pawn pawn, Building_TurretGunCE turret)
 		{
-			//ThingFilter filter = refuelable.TryGetComp<CompRefuelable>().Props.fuelFilter;
-			AmmoDef requestedAmmo = reloadable.CompAmmo.SelectedAmmo;
-			// try to find currently selected ammo first
-			var bestAmmo = FindBestAmmo(pawn, requestedAmmo);
-			// this code is mostly for siege raids, so they can use all the ammo dropped (and get more ammo)
-			// otherwise, they will wait forever for an HE ammo drop, without using the incendiary shells next to them
-			if (bestAmmo == null && !pawn.IsColonist && requestedAmmo.AmmoSetDefs != null)
+			AmmoDef requestedAmmo = turret.CompAmmo.SelectedAmmo;	
+			var bestAmmo = FindBestAmmo(pawn, requestedAmmo);   // try to find currently selected ammo first
+			if (bestAmmo == null && turret.CompAmmo.EmptyMagazine && requestedAmmo.AmmoSetDefs != null)
 			{
-				// if there isn't any, try to find some ammo from same ammo set
+				//Turret's selected ammo not available, and magazine is empty. Pick a new ammo from the set to load.
 				foreach (AmmoSetDef set in requestedAmmo.AmmoSetDefs)
 				{
 					foreach (AmmoLink link in set.ammoTypes)

@@ -868,6 +868,10 @@
     <xpath>Defs/ThingDef[defName="Gun_Minigun"]/recipeMaker</xpath>
   </Operation>
 
+  <Operation Class="PatchOperationRemove">
+    <xpath>Defs/ThingDef[defName="Gun_Minigun"]/weaponTags</xpath>
+  </Operation>
+
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="Gun_Minigun"]/statBases</xpath>
     <value>
@@ -1150,8 +1154,8 @@
     </weaponTags>
   </Operation>
 
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/ThingDef[defName="Gun_ChargeBlasterHeavy"]</xpath>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/ThingDef[@Name="Gun_ChargeBlasterHeavyBase"]/tools</xpath>
     <value>
       <tools>
         <li Class="CombatExtended.ToolCE">
@@ -1358,13 +1362,21 @@
     <xpath>/Defs/ThingDef[defName="Gun_ChargeLance"]/weaponTags/li[contains(.,"SpacerGun")]</xpath>
   </Operation>
 
+  <!-- Increase Orbital Bombardment Range -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="OrbitalTargeterBombardment" or defName="OrbitalTargeterPowerBeam"]/verbs/li/range</xpath>
+      <value>
+        <range>60</range>
+      </value>
+  </Operation>
+
   <!-- Remove Smoke and EMP Launchers -->
   <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Gun_SmokeLauncher"]</xpath>
+    <xpath>/Defs/ThingDef[defName="Gun_SmokeLauncher"]</xpath>
   </Operation>
 
   <Operation Class="PatchOperationRemove">
-    <xpath>Defs/ThingDef[defName="Gun_EmpLauncher"]</xpath>
+    <xpath>/Defs/ThingDef[defName="Gun_EmpLauncher"]</xpath>
   </Operation>
 
 </Patch>

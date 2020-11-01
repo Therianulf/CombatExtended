@@ -310,7 +310,7 @@
 		<workAmount>1400</workAmount>
 	</RecipeDef>
 
-  <RecipeDef ParentName="AmmoRecipeBase">
+  <RecipeDef ParentName="AdvancedAmmoRecipeBase">
     <defName>MakeAmmo_556x45mmNATO_Incendiary</defName>
     <label>make 5.56x45mm NATO (AP-I) cartridge x200</label>
     <description>Craft 200 5.56x45mm NATO (AP-I) cartridges.</description>
@@ -345,7 +345,7 @@
     <workAmount>2200</workAmount>
   </RecipeDef>
   
-  <RecipeDef ParentName="AmmoRecipeBase">
+  <RecipeDef ParentName="AdvancedAmmoRecipeBase">
     <defName>MakeAmmo_556x45mmNATO_HE</defName>
     <label>make 5.56x45mm NATO (HE) cartridge x200</label>
     <description>Craft 200 5.56x45mm NATO (HE) cartridges.</description>
@@ -380,7 +380,7 @@
     <workAmount>3000</workAmount>
   </RecipeDef>
   
-  <RecipeDef ParentName="AmmoRecipeBase">
+  <RecipeDef ParentName="AdvancedAmmoRecipeBase">
     <defName>MakeAmmo_556x45mmNATO_Sabot</defName>
     <label>make 5.56x45mm NATO (Sabot) cartridge x200</label>
     <description>Craft 200 5.56x45mm NATO (Sabot) cartridges.</description>
