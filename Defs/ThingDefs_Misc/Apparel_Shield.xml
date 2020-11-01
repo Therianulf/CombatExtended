@@ -99,7 +99,7 @@
     </statBases>
     <equippedStatOffsets>
       <ReloadSpeed>-0.3</ReloadSpeed>
-      <MeleeHitChance>-4</MeleeHitChance>
+      <MeleeHitChance>-0.4</MeleeHitChance>
       <ShootingAccuracyPawn>-0.4</ShootingAccuracyPawn>
       <AimingAccuracy>-0.2</AimingAccuracy>
       <Suppressability>-0.5</Suppressability>

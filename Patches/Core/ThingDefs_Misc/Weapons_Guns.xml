@@ -328,7 +328,7 @@
     <AmmoUser>
       <magazineSize>5</magazineSize>
       <reloadTime>6.3</reloadTime>
-      <ammoSet>Bullet_762x54mmR_FMJ</ammoSet>
+      <ammoSet>AmmoSet_762x54mmR</ammoSet>
     </AmmoUser>
     <FireModes>
       <aiAimMode>AimedShot</aiAimMode>

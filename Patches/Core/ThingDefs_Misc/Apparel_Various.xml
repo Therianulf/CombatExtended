@@ -124,7 +124,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[defName="Apparel_FlakVest"]/statBases/Mass</xpath>
 		<value>
-			<Mass>13</Mass>
+			<Mass>8</Mass>
 		</value>
 	</Operation>
 
@@ -366,7 +366,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[@Name="ApparelArmorPowerBase"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
-			<ArmorRating_Sharp>20</ArmorRating_Sharp>
+			<ArmorRating_Sharp>28</ArmorRating_Sharp>
 		</value>
 	</Operation>
 
@@ -392,7 +392,7 @@
 		<xpath>Defs/ThingDef[@Name="ApparelArmorPowerBase"]/equippedStatOffsets</xpath>
 		<value>
 			<CarryWeight>80</CarryWeight>
-			<CarryBulk>10</CarryBulk>
+			<CarryBulk>100</CarryBulk>
 			<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
 			<ToxicSensitivity>-0.50</ToxicSensitivity>
 		</value>
@@ -440,7 +440,7 @@
 	<Operation Class="PatchOperationReplace">
 		<xpath>Defs/ThingDef[@Name="ApparelArmorReconBase"]/statBases/ArmorRating_Sharp</xpath>
 		<value>
-			<ArmorRating_Sharp>16</ArmorRating_Sharp>
+			<ArmorRating_Sharp>21</ArmorRating_Sharp>
 		</value>
 	</Operation>
 

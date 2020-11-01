@@ -66,10 +66,10 @@
     <statBases>
       <WorkToMake>10800</WorkToMake>
       <MaxHitPoints>75</MaxHitPoints>
-      <ArmorRating_Sharp>14</ArmorRating_Sharp>
-      <ArmorRating_Blunt>21</ArmorRating_Blunt>
-      <Mass>12</Mass>
-      <Bulk>5</Bulk>
+      <ArmorRating_Sharp>17</ArmorRating_Sharp>
+      <ArmorRating_Blunt>31</ArmorRating_Blunt>
+      <Mass>5.44</Mass>
+      <Bulk>4</Bulk>
       <WornBulk>3</WornBulk>
       <EquipDelay>5</EquipDelay>
     </statBases>
