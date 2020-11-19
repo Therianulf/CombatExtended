@@ -251,13 +251,8 @@
         <label>throw smoke grenade</label>
         <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-<<<<<<< HEAD
         <range>12</range>
         <warmupTime>0.8</warmupTime>
-=======
-        <range>10</range>
-        <warmupTime>1.8</warmupTime>
->>>>>>> pr/22
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
         <soundCast>ThrowGrenade</soundCast>
@@ -329,13 +324,8 @@
         <label>throw firefoam grenade</label>
         <verbClass>CombatExtended.Verb_ShootCEOneUse</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
-<<<<<<< HEAD
         <range>14</range>
         <warmupTime>0.8</warmupTime>
-=======
-        <range>10</range>
-        <warmupTime>1.8</warmupTime>
->>>>>>> pr/22
         <noiseRadius>4</noiseRadius>
         <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
         <soundCast>ThrowGrenade</soundCast>
