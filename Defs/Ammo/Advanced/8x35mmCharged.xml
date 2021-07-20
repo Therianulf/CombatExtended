@@ -137,7 +137,7 @@
           <amount>19</amount>
         </li>
       </secondaryDamage>
-      <armorPenetrationSharp>35</armorPenetrationSharp>
+      <armorPenetrationSharp>32</armorPenetrationSharp>
       <armorPenetrationBlunt>57.6</armorPenetrationBlunt>
       <empShieldBreakChance>0.2</empShieldBreakChance>
     </projectile>

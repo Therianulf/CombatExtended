@@ -1273,8 +1273,8 @@
       <muzzleFlashScale>9</muzzleFlashScale>
     </Properties>
     <AmmoUser>
-      <magazineSize>1</magazineSize>
-      <reloadTime>1.6</reloadTime>
+      <magazineSize>5</magazineSize>
+      <reloadTime>3</reloadTime>
       <ammoSet>AmmoSet_5x35mmCharged</ammoSet>
     </AmmoUser>
     <FireModes>
